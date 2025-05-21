@@ -15,6 +15,7 @@
       <p>Your guide to play guitar awesome properly</p>
       <button class="btn">Get Started</button>
       <button class="btn"> <a href="/login">Login</button>
+      <button class="btn"> <a href="/register">Register</button>
     </header>
 
     <section class="categories">
