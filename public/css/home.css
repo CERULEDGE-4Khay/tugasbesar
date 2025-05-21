@@ -73,6 +73,7 @@ header p {
   background-color: #1e7cf7;
   border-radius: 15px;
   padding: 20px;
+  justify-content: center;
   text-align: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.05);
 }

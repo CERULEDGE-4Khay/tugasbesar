@@ -40,13 +40,13 @@
       <div class="info-box">
         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
   <rect x="12" y="10" width="40" height="44" rx="4" fill="#FFF8E1" stroke="#FFC107" stroke-width="2"/>
-  <text x="20" y="30" font-size="20" fill="#F57F17">?</text>
-</svg>
-
+  <text x="27" y="35" font-size="20" fill="#F57F17">?</text>
+        </svg>
         <h4>Educational Quiz</h4>
         <p>Test your knowledge</p>
         <a href="#">Take Quiz</a>
       </div>
+
       <div class="info-box">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
   <circle cx="32" cy="24" r="14" fill="#FFEB3B" stroke="#FBC02D" stroke-width="2"/>
