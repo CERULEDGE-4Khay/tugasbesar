@@ -75,6 +75,10 @@ header p {
   gap: 20px;
 }
 
+.blue-bg {
+  background-color: #1e7cf7 !important;
+}
+
 .info-box {
   flex: 1 1 30%;
   background-color: #1e7cf7;

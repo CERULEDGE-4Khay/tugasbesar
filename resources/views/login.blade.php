@@ -11,23 +11,23 @@
 </head>
 <body>
    <div class="container" style="height: 420px">
-    <form>
-        <h2>Sign In</h2>
-        <div class="input-box">
-        <input type="text" required="required">
-        <span>Username</span>
-        <i></i>
-        </div>
-        <div class="input-box">
-        <input password="password" required="required">
-        <span>Password</span>
-        <i></i>
-        </div>
-        <div class="links">
-        <a href="#">Forgot Password?</a>
-        <a href="#">Sign Up</a>
-        </div>
-        <input type="submit" value="Login">
-    </form>
-</div>     
+        <form>
+            <h2>Sign In</h2>
+            <div class="input-box">
+            <input type="text" required="required">
+            <span>Username</span>
+            <i></i>
+            </div>
+            <div class="input-box">
+            <input password="password" required="required">
+            <span>Password</span>
+            <i></i>
+            </div>
+            <div class="links">
+            <a href="#">Forgot Password?</a>
+            <a href="#">Sign Up</a>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>     
 </body>

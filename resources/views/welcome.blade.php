@@ -47,8 +47,8 @@
       <h2>Learn How to Play Guitar Better</h2>
       <p>Your guide to play guitar awesome properly</p>
       <button class="btn">Get Started</button>
-      <button class="btn"> <a href="/login">Login</button>
-      <button class="btn"> <a href="/register">Register</button>
+      <button class="btn"> <a href="/login">Login</a></button>
+      <button class="btn"> <a href="/register">Register</a></button>
     </header>
 
     <section class="categories">
@@ -69,11 +69,11 @@
       </div>
     </section>
 
-    <section class="info-grid">
+    {{-- <section class="info-grid">
       <div class="info-box">
         <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
-  <rect x="12" y="10" width="40" height="44" rx="4" fill="#FFF8E1" stroke="#FFC107" stroke-width="2"/>
-  <text x="27" y="35" font-size="20" fill="#F57F17">?</text>
+          <rect x="12" y="10" width="40" height="44" rx="4" fill="#FFF8E1" stroke="#FFC107" stroke-width="2"/>
+          <text x="27" y="35" font-size="20" fill="#F57F17">?</text>
         </svg>
         <h4>Educational Quiz</h4>
         <p>Test your knowledge</p>
@@ -103,7 +103,53 @@
         <p>Go here to appointment your needed</p>
         <a href="#">Learn More</a>
       </div>
-    </section>
+    </section> --}}
+
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card blue-bg">
+          <div class="card-body text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="none" viewBox="0 0 64 64">
+              <rect x="12" y="10" width="40" height="44" rx="4" fill="#FFF8E1" stroke="#FFC107" stroke-width="2"/>
+              <text x="27" y="35" font-size="20" fill="#F57F17">?</text>
+            </svg>
+            <h4 class="text-white">Educational Quiz</h4>
+            <p class="text-white">Test your knowledge</p>
+            <a href="#" class="text-white">Take Quiz</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card blue-bg">
+          <div class="card-body text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+              <circle cx="32" cy="24" r="14" fill="#FFEB3B" stroke="#FBC02D" stroke-width="2"/>
+              <path d="M26 40h12v6a2 2 0 0 1-2 2h-8a2 2 0 0 1-2-2v-6z" fill="#FFA000"/>
+              <path d="M30 48h4v4h-4z" fill="#616161"/>
+              <!-- Garis sinar cahaya -->
+              <line x1="32" y1="4" x2="32" y2="10" stroke="#FBC02D" stroke-width="2"/>
+              <line x1="52" y1="24" x2="58" y2="24" stroke="#FBC02D" stroke-width="2"/>
+              <line x1="6" y1="24" x2="12" y2="24" stroke="#FBC02D" stroke-width="2"/>
+              <line x1="47" y1="9" x2="43" y2="13" stroke="#FBC02D" stroke-width="2"/>
+              <line x1="17" y1="9" x2="21" y2="13" stroke="#FBC02D" stroke-width="2"/>
+            </svg>
+            <h4 class="text-white">Educational Quiz</h4>
+            <p class="text-white">Test your knowledge</p>
+            <a href="#" class="text-white">Take Quiz</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card blue-bg">
+          <div class="card-body text-center">
+            <img src="{{ asset('/img/guitar.png') }}" alt="Question or Request?" width="64">
+            <h4 class="text-white">Educational Quiz</h4>
+            <p class="text-white">Test your knowledge</p>
+            <a href="#" class="text-white">Take Quiz</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script>
