@@ -76,8 +76,9 @@
 </div> --}}
 <link rel="stylesheet" href="css/login.css">
 
-<div class="container" style="height: 600px;">
+<div class="container" style="height: 1200px;">
     <form>
+        <img src="img/pickitup-logo.png" alt="Logo" class="logo">
         <h2>Register</h2>
         <div class="input-box">
             <input type="text" required="required">
@@ -100,9 +101,13 @@
             <i></i>
         </div>
         <div class="links">
-            <a href="#">Forgot Password?</a>
-            <a href="#">Sign Up</a>
-        </div>
+            <a href="#">Already Have an Account?</a>
+      <div class="social-icons">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg" alt="Google">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png" alt="Facebook">
+       </div>
+             <a href="#">Sign Up</a>
+        </div>  
         <input type="submit" value="Register">
     </form>
 </div>

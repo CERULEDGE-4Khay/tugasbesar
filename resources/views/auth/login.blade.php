@@ -72,8 +72,9 @@
     </div>
 </div> --}}
 
-<div class="container" style="height: 420px">
+<div class="container" style="height: 750px">
         <form>
+            <img src="img/pickitup-logo.png" alt="Logo" class="logo" width="100%"> 
             <h2>Sign In</h2>
             <div class="input-box">
             <input type="text" required="required" name="name">

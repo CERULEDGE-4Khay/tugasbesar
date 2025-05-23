@@ -10,7 +10,10 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #04238a;
+  /* background: #04238a; */
+  background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
 }
 
 .container {
@@ -160,4 +163,23 @@ input[type="submit"] {
 input[type="submit"]:active {
   transform: scale(.9);
   opacity: .8;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.terms {
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 5px;
+  flex-direction: column;
+  color: #333;
 }
