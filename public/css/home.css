@@ -1,4 +1,4 @@
- body {
+ /* body {
   font-family: 'Segoe UI', sans-serif;
   background-image: url('img/electric-guitar-bg.jpg');
   margin: 0;
@@ -22,7 +22,7 @@
 header {
   text-align: center;
   padding: 40px 20px;
-   background-color: #1e7cf7;
+  background-color: #1e7cf7;
   border-radius: 15px;
 }
 
@@ -104,4 +104,4 @@ header p {
 
 a { 
     color: white;
-}
+} */
