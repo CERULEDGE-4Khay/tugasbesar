@@ -44,7 +44,7 @@
         <ul>
           <li><a href="/" class="active">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
+          <li><a href="/service">Services</a></li>
           <li><a href="/dashboard">DashBoard</a></li>
           <li><a href="#team">Team</a></li>
           <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -69,8 +69,8 @@
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="cta-btn" href="index.html#about">Get Started</a>
-
+      <a class="cta-btn" href="/login">Login</a>
+      <a class="cta-btn" href="/register">Register</a>
     </div>
   </header>
 

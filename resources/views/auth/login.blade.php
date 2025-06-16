@@ -72,7 +72,7 @@
     </div>
 </div> --}}
 
-<div class="container" style="height: 750px">
+<div class="container" style="height: 820px">
         <form>
             <img src="img/pickitup-logo.png" alt="Logo" class="logo" width="100%"> 
             <h2>Sign In</h2>
@@ -91,6 +91,17 @@
             <a href="#">Sign Up</a>
             </div>
             <input type="submit" value="Login">
+            <div class="links">
+            {{-- <a href="#" class="border" style="display: block">Already Have an Account?</a> --}}
+            <a href="" class="d-block btn btn-outline-secondary" style="width: 100%">
+                Google
+            </a>
+        </div>
+        <div class="links">
+            <a href="" class="d-block btn btn-outline-primary" style="width: 100%">
+                facebook
+            </a>
+        </div>
         </form>
     </div>    
 @endsection

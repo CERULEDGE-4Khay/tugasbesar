@@ -31,6 +31,9 @@ Route::get('quiz', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+Route::get('/service', function () {
+    return view('service');
+});
 
 Auth::routes();
 
