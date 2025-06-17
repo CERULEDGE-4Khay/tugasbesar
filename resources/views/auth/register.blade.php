@@ -1,4 +1,7 @@
-@extends('layouts.app') @section('content') {{--
+@extends('layouts.app')
+
+@section('content')
+ {{--
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -76,7 +79,8 @@
 <link rel="stylesheet" href="css/login.css" />
 
 <div class="container" style="height: 1050px;">
-    <form>
+    <form method="POST" action="{{ route('register')}}">
+        @csrf
         <img src="img/pickitup-logo.png" alt="Logo" class="logo" />
         <h2>Register</h2>
         <div class="input-box">
@@ -95,13 +99,16 @@
             <i></i>
         </div>
         <div class="input-box">
-            <input password="password" required="required" />
+            <input type="password" required="required" />
             <span>Password</span>
             <i></i>
         </div>
         <input type="submit" value="Register" />
         <hr>
         <span>Already have an account? <a href="/login">Login</a></span>
+        <div class="links">
+            <a href="/">Back to Home</a>
+        </div>
         <div class="links">
             {{-- <a href="#" class="border" style="display: block">Already Have an Account?</a> --}}
             <a href="" class="d-block btn btn-outline-secondary" style="width: 100%">

@@ -9,8 +9,6 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="{{ asset('assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -100,7 +98,7 @@
         <div class="row gy-4">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
-            <img src="assets/img/about.jpg" class="img-fluid rounded-4 mb-4" alt="">
+            <img src="{{ asset('img/photo-guitar.jpg')}}" class="img-fluid rounded-4 mb-4" alt="">
             <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
             <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
           </div>
@@ -121,7 +119,7 @@
               </p>
 
               <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid rounded-4" alt="">
+                <img src="{{ asset('/img/acoustic-guitar.jpg')}}" class="img-fluid rounded-4" alt="">
                 <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
               </div>
             </div>
@@ -143,7 +141,7 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-emoji-smile text-primary flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <span data-purecounter-start="0" data-purecounter-end="112" data-purecounter-duration="1" class="purecounter"></span>
                 <p>Happy Clients</p>
               </div>
             </div>
@@ -154,7 +152,7 @@
               <i class="bi bi-journal-richtext text-primary flex-shrink-0"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Projects</p>
+                <p>Materi</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
@@ -163,8 +161,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-headset text-primary flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hours Of Support</p>
+                <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Genre</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
@@ -173,8 +171,8 @@
             <div class="stats-item d-flex align-items-center w-100 h-100">
               <i class="bi bi-people text-primary flex-shrink-0"></i>
               <div>
-                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                <p>Hard Workers</p>
+                <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Mentor</p>
               </div>
             </div>
           </div><!-- End Stats Item -->
@@ -201,7 +199,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-1.jpg" class="img-fluid" alt="">
+                <img src="{{ asset('/img/guitar-photo1.jpg')}}" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -218,7 +216,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-2.jpg" class="img-fluid" alt="">
+                <img src="{{ asset('/img/guitar-photo.jpg')}}" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -235,7 +233,7 @@
           <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
             <div class="service-item">
               <div class="img">
-                <img src="assets/img/services-3.jpg" class="img-fluid" alt="">
+                <img src="{{ asset('/img/guitar-materi.png')}}" class="img-fluid" alt="">
               </div>
               <div class="details position-relative">
                 <div class="icon">
@@ -256,7 +254,7 @@
     </section><!-- /Services Section -->
 
     <!-- Clients Section -->
-    <section id="clients" class="clients section light-background">
+    {{-- <section id="clients" class="clients section light-background">
 
       <div class="container" data-aos="fade-up">
 
@@ -290,7 +288,7 @@
 
       </div>
 
-    </section><!-- /Clients Section -->
+    </section><!-- /Clients Section --> --}}
 
     <!-- Features Section -->
     <section id="features" class="features section">
@@ -348,7 +346,7 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-1.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('/img/guitar-photo1.jpg')}}" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -374,7 +372,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-2.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('/img/guitar-photo.jpg')}}" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -399,7 +397,7 @@
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-3.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('/img/photo-guitar.jpg')}}" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -424,7 +422,7 @@
                 </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
-                <img src="assets/img/working-4.jpg" alt="" class="img-fluid">
+                <img src="{{ asset('/img/photo-guitar1.jpg')}}" alt="" class="img-fluid">
               </div>
             </div>
           </div><!-- End Tab Content Item -->
@@ -632,8 +630,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>CHECK OUR PORTFOLIO</p>
+        <h2>Recommended</h2>
+        <p>CHECK OUR RECOMMENDED ITEM</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -642,10 +640,10 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
-            <li data-filter=".filter-books">Books</li>
+            <li data-filter=".filter-app">Guitar Classic</li>
+            <li data-filter=".filter-product">Guitar Accoustic</li>
+            <li data-filter=".filter-branding">Guitar Electric</li>
+            <li data-filter=".filter-books">Ukulele</li>
           </ul><!-- End Portfolio Filters -->
 
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -888,7 +886,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                   <i class="bi bi-geo-alt"></i>
                   <h3>Address</h3>
-                  <p>A108 Adam Street, New York, NY 535022</p>
+                  <p>Jl. Babakan Ciparay, Kota Bandung, BDG 535022</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -896,7 +894,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                   <i class="bi bi-telephone"></i>
                   <h3>Call Us</h3>
-                  <p>+1 5589 55488 55</p>
+                  <p>+62878-7263-4316</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -904,7 +902,7 @@
                 <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                   <i class="bi bi-envelope"></i>
                   <h3>Email Us</h3>
-                  <p>info@example.com</p>
+                  <p>pickitup@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -960,10 +958,10 @@
             <span class="sitename">PickItUp</span>
           </a>
           <div class="footer-contact pt-3">
-            <p>A108 Adam Street</p>
-            <p>New York, NY 535022</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-            <p><strong>Email:</strong> <span>info@example.com</span></p>
+            <p>Jl. Babakan Ciparay</p>
+            <p>Kota Bandung, BDG 20255</p>
+            <p class="mt-3"><strong>Phone:</strong> <span>+62878-7263-4316</span></p>
+            <p><strong>Email:</strong> <span>pickitup@gmail.com</span></p>
           </div>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
@@ -987,11 +985,11 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Design</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Web Development</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Product Management</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Marketing</a></li>
-            <li><i class="bi bi-chevron-right"></i> <a href="#">Graphic Design</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Guitar Recommended</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Mentoring</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Materi</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Quiz Guitar</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="#">Guitar Update</a></li>
           </ul>
         </div>
 

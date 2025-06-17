@@ -2,6 +2,7 @@
 
 @section('content')
 <link rel="stylesheet" href="css/login.css">
+
 {{-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -72,8 +73,10 @@
     </div>
 </div> --}}
 
+
 <div class="container" style="height: 820px">
-        <form>
+        <form method="POST" action="{{ route('login') }}">
+            @csrf
             <img src="img/pickitup-logo.png" alt="Logo" class="logo" width="100%"> 
             <h2>Sign In</h2>
             <div class="input-box">
@@ -88,7 +91,8 @@
             </div>
             <div class="links">
             <a href="#">Forgot Password?</a>
-            <a href="#">Sign Up</a>
+            <a href="/register">Sign Up</a>
+            <a href="/">Back to Home</a>
             </div>
             <input type="submit" value="Login">
             <div class="links">

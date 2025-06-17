@@ -11,9 +11,14 @@
 </head>
 <body>
    <div class="container" style="height: 420px">
-        <form>
+        <form form method="POST" action="{{ route('login') }}">
+            @csrf
             <h2>Sign In</h2>
             <div class="input-box">
+                <input type="text" name="email" required>
+                <span>Email</span>
+            </div>
+                <div class="input-box">
             <input type="text" required="required">
             <span>Username</span>
             <i></i>
