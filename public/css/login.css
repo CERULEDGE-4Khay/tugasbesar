@@ -184,3 +184,44 @@ input[type="submit"]:active {
   flex-direction: column;
   color: #333;
 }
+
+footer {
+  background: grey;
+  padding: 10px;
+  margin: 5;
+  height: auto;
+  box-sizing: border-box;
+}
+.footer h4 {
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  padding-bottom: 12px;
+}
+.footer .footer-contact p {
+  margin-bottom: 5px;
+}
+.logo span {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-family: var(--heading-font);
+  color: var(--heading-color);
+}
+.footer a:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+.footer .copyright {
+  padding:  0;
+  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.footer .copyright p {
+  margin-bottom: 0;
+}
+
+.footer .credits {
+  margin-top: 6px;
+  font-size: 13px;
+}
