@@ -30,6 +30,10 @@ Route::get('/service', function () {
 Route::get('/team', function () {
     return view('team');
 });
+Route::get('/contact', function () {
+    return view('contact');
+});
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
