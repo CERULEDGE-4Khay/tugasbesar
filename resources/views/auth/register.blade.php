@@ -1,7 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
- {{--
+@extends('layouts.app') @section('content') {{--
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -84,39 +81,54 @@
         <img src="img/pickitup-logo.png" alt="Logo" class="logo" />
         <h2>Register</h2>
         <div class="input-box">
-            <input type="text" required="required" />
+            <input type="text" required="required" name="name"/>
             <span>Name</span>
             <i></i>
         </div>
+        @error('name')
+            <span class="" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror
         <div class="input-box">
-            <input type="text" required="required" />
-            <span>Username</span>
-            <i></i>
-        </div>
-        <div class="input-box">
-            <input type="text" required="required" />
+            <input type="email" required="required" name="email" />
             <span>Email</span>
             <i></i>
         </div>
+        @error('email')
+            <span class="" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror
         <div class="input-box">
-            <input type="password" required="required" />
+            <input type="password" required="required" name="password" />
             <span>Password</span>
             <i></i>
         </div>
-        <input type="submit" value="Register" />
-        <hr>
+        @error('password')
+            <span class="" role="alert">
+                <strong>{{ $message }}</strong>
+            </span>
+        @enderror
+        <div class="input-box">
+            <input type="password" required="required" name="password_confirmation" />
+            <span>Connfirm Password</span>
+            <i></i>
+        </div>
+        <button class="btn btn-success mt-3 w-100" type="submit">Register</button>
+        <hr />
         <span>Already have an account? <a href="/login">Login</a></span>
         <div class="links">
             <a href="/">Back to Home</a>
         </div>
         <div class="links">
-            {{-- <a href="#" class="border" style="display: block">Already Have an Account?</a> --}}
-            <a href="" class="d-block btn btn-outline-secondary" style="width: 100%">
+            {{-- <a href="#" class="border" style="display: block;">Already Have an Account?</a> --}}
+            <a href="" class="d-block btn btn-outline-secondary" style="width: 100%;">
                 Google
             </a>
         </div>
         <div class="links">
-            <a href="" class="d-block btn btn-outline-primary" style="width: 100%">
+            <a href="" class="d-block btn btn-outline-primary" style="width: 100%;">
                 facebook
             </a>
         </div>
@@ -125,27 +137,28 @@
 <footer class="footer">
     <div class="row gy-4">
         <div class="col-lg-4 col-md-6 footer-about">
-    <a href="/" class="logo d-flex align-items-center">
-    <span class="sitename">PICKITUP</span></a>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum, nemo non laudantium quo culpa laboriosam quia odio neque laborum nulla? Eveniet itaque pariatur vitae provident maiores ipsam enim accusantium!</p>
-    </div>
-     {{-- <div class="footer-contact pt-3">
+            <a href="/" class="logo d-flex align-items-center"> <span class="sitename">PICKITUP</span></a>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum, nemo non laudantium quo culpa laboriosam quia odio neque laborum nulla? Eveniet itaque pariatur vitae provident maiores ipsam enim accusantium!</p>
+        </div>
+        {{--
+        <div class="footer-contact pt-3">
             <p>Jl. Babakan Ciparay</p>
             <p>Kota Bandung, BDG 20255</p>
             <p class="mt-3"><strong>Phone:</strong> <span>+62878-7263-4316</span></p>
             <p><strong>Email:</strong> <span>pickitup@gmail.com</span></p>
         </div>
-    </div> --}}
-    <hr>
-     <div class="footer copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">PickItUp</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
-      </div>
+    </div>
+    --}}
+    <hr />
+    <div class="footer copyright text-center mt-4">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">PickItUp</strong> <span>All Rights Reserved</span></p>
+        <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you've purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
+        </div>
     </div>
 </footer>
 @endsection

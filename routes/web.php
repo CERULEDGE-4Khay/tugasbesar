@@ -27,7 +27,9 @@ Route::get('/dashboard', function () {
 Route::get('/service', function () {
     return view('service');
 });
-
+Route::get('/verify', function () {
+    return view('auth.verify');
+});
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
