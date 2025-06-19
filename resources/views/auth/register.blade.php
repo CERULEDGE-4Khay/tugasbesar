@@ -134,23 +134,10 @@
         </div>
     </form>
 </div>
-<footer class="footer">
+{{-- <footer class="footer">
     <div class="row gy-4">
-        <div class="col-lg-4 col-md-6 footer-about">
-            <a href="/" class="logo d-flex align-items-center"> <span class="sitename">PICKITUP</span></a>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam earum, nemo non laudantium quo culpa laboriosam quia odio neque laborum nulla? Eveniet itaque pariatur vitae provident maiores ipsam enim accusantium!</p>
-        </div>
-        {{--
-        <div class="footer-contact pt-3">
-            <p>Jl. Babakan Ciparay</p>
-            <p>Kota Bandung, BDG 20255</p>
-            <p class="mt-3"><strong>Phone:</strong> <span>+62878-7263-4316</span></p>
-            <p><strong>Email:</strong> <span>pickitup@gmail.com</span></p>
-        </div>
-    </div>
-    --}}
-    <hr />
-    <div class="footer copyright text-center mt-4">
+        <hr />
+        <div class="footer copyright text-center mt-4">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">PickItUp</strong> <span>All Rights Reserved</span></p>
         <div class="credits">
             <!-- All the links in the footer should remain intact. -->
@@ -160,5 +147,6 @@
             Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href=“https://themewagon.com>ThemeWagon
         </div>
     </div>
-</footer>
+    </div>
+</footer> --}}
 @endsection

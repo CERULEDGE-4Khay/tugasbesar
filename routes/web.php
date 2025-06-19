@@ -27,8 +27,8 @@ Route::get('/dashboard', function () {
 Route::get('/service', function () {
     return view('service');
 });
-Route::get('/verify', function () {
-    return view('auth.verify');
+Route::get('/team', function () {
+    return view('team');
 });
 Auth::routes();
 

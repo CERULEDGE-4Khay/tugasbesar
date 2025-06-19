@@ -12,22 +12,22 @@
         <li><a href="#about">About</a></li>
         <li><a href="/service">Services</a></li>
         <li><a href="/dashboard">DashBoard</a></li>
-        <li><a href="#team">Team</a></li>
-        <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li><a href="/team">Team</a></li>
+        <li class="dropdown"><a href="#"><span>Pilihan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">Dropdown 1</a></li>
-            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li><a href="#">Materi Gitar</a></li>
+            {{-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Deep Dropdown 1</a></li>
                 <li><a href="#">Deep Dropdown 2</a></li>
                 <li><a href="#">Deep Dropdown 3</a></li>
                 <li><a href="#">Deep Dropdown 4</a></li>
                 <li><a href="#">Deep Dropdown 5</a></li>
-              </ul>
+              </ul> --}}
             </li>
-            <li><a href="#">Dropdown 2</a></li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
+            <li><a href="#">Katalog Chord Dasar</a></li>
+            <li><a href="#">Video Tutorial</a></li>
+            <li><a href="#">Latihan Interaktif</a></li>
           </ul>
         </li>
         <li><a href="#contact">Contact</a></li>
