@@ -6,8 +6,8 @@
     <img src="{{ asset('img/guitar-quiz.png')}}" alt="" data-aos="fade-in">
 
     <div class="container d-flex flex-column align-items-center">
-      <h2 data-aos="fade-up" data-aos-delay="100">WELCOME TO QUIZ</h2>
-      <p data-aos="fade-up" data-aos-delay="200">Tempat belajar gitar mulai dari dasar sampai <span class="text-danger">JAGO</span></p>
+      <h2 data-aos="fade-up" data-aos-delay="100">FUN QUIZ PICKITUP</h2>
+      <p data-aos="fade-up" data-aos-delay="200">Disini kamu akan di uji pengetahuan soal gitar kamu nih, siap?</p>
     </div>
 
   </section>

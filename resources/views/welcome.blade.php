@@ -445,7 +445,7 @@
   <!-- Testimonials Section -->
   <section id="testimonials" class="testimonials section dark-background">
 
-    <img src="assets/img/testimonials-bg.jpg" class="testimonials-bg" alt="">
+    <img src="/img/guitar-testimoni.jpg" class="testimonials-bg" alt="">
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -469,7 +469,7 @@
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+              <img src="/img/guitar3.jpg" class="testimonial-img" alt="">
               <h3>M.Khairan Athallah S</h3>
               <h4>Ceo &amp; Founder</h4>
               <div class="stars">
@@ -736,19 +736,19 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Team</h2>
-      <p>CHECK OUR TEAM</p>
+      <p>PICKITUP TEAM</p>
     </div><!-- End Section Title -->
 
     <div class="container">
 
       <div class="row gy-5">
 
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        {{-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="member">
-            <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+            <div class="pic"><img src="/img/foto-juara-band.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
-              <h4>Walter White</h4>
-              <span>Chief Executive Officer</span>
+              <h4>M.Khairan Athallah.S</h4>
+              <span>Founder PICKITUP</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter-x"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -757,14 +757,14 @@
               </div>
             </div>
           </div>
-        </div><!-- End Team Member -->
+        </div><!-- End Team Member --> --}}
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
           <div class="member">
-            <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+            <div class="pic"><img src="/img/foto-juara-band.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
-              <h4>Sarah Jhonson</h4>
-              <span>Product Manager</span>
+              <h4>Mochamad Khairan Athallah S</h4>
+              <span>Founder PICKITUP</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter-x"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
@@ -779,8 +779,8 @@
           <div class="member">
             <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
-              <h4>William Anderson</h4>
-              <span>CTO</span>
+              <h4>M. Rizky Hakim</h4>
+              <span>Support IT</span>
               <div class="social">
                 <a href=""><i class="bi bi-twitter-x"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
