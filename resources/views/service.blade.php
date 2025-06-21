@@ -4,10 +4,10 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(/img/guitar2.jpg);">
       <div class="container position-relative">
-        <h1>Service Details</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <h1>PickItUp Services</h1>
+        <p>apa saja layanan yang ada di Pickitup? beberapa diantaranya dibawah sini ya!.</p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="/">Home</a></li>
@@ -26,11 +26,11 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
+              <a href="#" class="active">Materi Dasar Gitar</a>
+              <a href="#">Katalog Chord Dasar</a>
+              <a href="#">Latihan Interaktif</a>
+              <a href="#">Video Tutorial</a>
+              <a href="#">Fun QUIZ Gitar Dasar</a>
             </div>
 
             <h4>Enim qui eos rerum in delectus</h4>
@@ -38,7 +38,7 @@
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
+            <img src="{{ asset('/img/guitar-services.png')}}" alt="" class="img-fluid services-img">
             <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
             <p>
               Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.

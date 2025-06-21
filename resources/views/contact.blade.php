@@ -2,7 +2,7 @@
 @section('content')
 
   <!-- Contact Section -->
-  <section id="contact" class="contact section mt-5">
+  <section id="contact" class="contact section mt-2 bg-dark">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
