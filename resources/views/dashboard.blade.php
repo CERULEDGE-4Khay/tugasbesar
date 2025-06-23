@@ -28,15 +28,15 @@
     <div class="card">
         <h3>Progres Belajar</h3>
         <div class="progress-bar">
-            <div class="progress" style="width: 45%;"></div>
+            <div class="progress" style="width: 90%;"></div>
         </div>
-        <p>Level: Pemula (45% selesai)</p>
+        <p>Level: Pemula (90% selesai)</p>
     </div>
 
     <div class="card">
         <h3>Modul Terakhir</h3>
         <p>Chord Dasar: G, C, D</p>
-        <a href="/" class="btn btn-primary">Lanjut Belajar</a>
+        <a href="index" class="btn btn-primary">Lanjut Belajar</a>
     </div>
 
     <div class="card">

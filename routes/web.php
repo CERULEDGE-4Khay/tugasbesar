@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\LearningController;
 
 
 Route::get('/', function () {
@@ -35,6 +36,21 @@ Route::get('/contact', function () {
 });
 Route::get('/about', function () {
     return view('about');
+});
+Route::get('/courses', function () {
+    return view('courses');
+});
+Route::get('/index', function(){
+    return view('layouts.index');
+});
+
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/dashboard', [LearningController::class, 'dashboard'])->name('dashboard');
+    Route::get('/courses', [LearningController::class, 'courses'])->name('courses.index');
+    Route::get('/courses/{id}', [LearningController::class, 'courseDetail'])->name('courses.detail');
+    Route::get('/videos/{id}', [LearningController::class, 'watchVideo'])->name('videos.watch');
+    Route::post('/progress/save', [LearningController::class, 'saveProgress'])->name('progress.save');
 });
 
 Auth::routes();
