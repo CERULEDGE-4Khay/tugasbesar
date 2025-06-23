@@ -23,7 +23,7 @@ Route::get('quiz', function () {
 })->name('quiz');
 Route::get('/dashboard', function () {
     return view('dashboard');
-});
+})->middleware(['auth'])->name('dashboard');
 Route::get('/service', function () {
     return view('service');
 });
@@ -32,6 +32,9 @@ Route::get('/team', function () {
 });
 Route::get('/contact', function () {
     return view('contact');
+});
+Route::get('/about', function () {
+    return view('about');
 });
 
 Auth::routes();
