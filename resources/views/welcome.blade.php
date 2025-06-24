@@ -27,29 +27,41 @@
 
       <div class="row gy-4">
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <h3>Voluptatem dignissimos provident laboris nisi ut aliquip ex ea commodo</h3>
-          <img src="{{ asset('img/photo-guitar.jpg')}}" class="img-fluid rounded-4 mb-4" alt="">
-          <p>Ut fugiat ut sunt quia veniam. Voluptate perferendis perspiciatis quod nisi et. Placeat debitis quia recusandae odit et consequatur voluptatem. Dignissimos pariatur consectetur fugiat voluptas ea.</p>
-          <p>Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.</p>
+          <h3>Belajar dasar gitar mulai dari bagian bagian pada gitar dan posisi jari yang baik</h3>
+          <img src="{{ asset('img/bagian-gitar.jpg')}}" class="img-fluid rounded-4 mb-4" alt="bagian bagian gitar">
+           <p>Untuk belajar gitar, penting banget mengenal nama dan fungsi setiap bagian dari gitar. Berikut adalah bagian-bagian utama gitar:</p>
+
+            <ul>
+              <li><strong>Headstock (Kepala Gitar):</strong> Bagian paling atas gitar. Di sini terdapat tuning peg untuk menyetel senar.</li>
+              <li><strong>Tuning Peg (Penyetel Senar):</strong> Berfungsi untuk mengatur ketegangan senar agar menghasilkan nada yang pas.</li>
+              <li><strong>Nut:</strong> Bagian kecil berbahan plastik atau tulang yang memisahkan headstock dan fretboard.</li>
+              <li><strong>Neck (Leher Gitar):</strong> Bagian panjang tempat tangan kiri menekan senar. Di sini terdapat fretboard.</li>
+              <li><strong>Fretboard (Papan Jari):</strong> Papan berisi garis-garis logam (fret). Setiap fret menghasilkan nada yang berbeda saat ditekan.</li>
+              <li><strong>Frets:</strong> Garis logam melintang pada fretboard. Menekan senar di antara fret akan mengubah nada.</li>
+              <li><strong>Body (Badan Gitar):</strong> Bagian terbesar gitar, tempat suara dihasilkan (terutama pada gitar akustik).</li>
+              <li><strong>Sound Hole (Lubang Suara):</strong> Hanya ada pada gitar akustik. Berfungsi untuk memperkuat resonansi suara.</li>
+              <li><strong>Bridge:</strong> Tempat senar diikat di badan gitar.</li>
+              <li><strong>Pickguard:</strong> Pelindung agar body gitar tidak tergores saat menggunakan pick.</li>
+            </ul>
+
         </div>
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="250">
           <div class="content ps-0 ps-lg-5">
             <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
+              selain kita harus tahu bagian bagian pada gitar kita juga perlu tahu posisi jari jari tangan kita yang paling bagus itu seperti apa
             </p>
+             <h2>Posisi Jari yang Baik Saat Bermain Gitar</h2>
+             <hr>
             <ul>
-              <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-              <li><i class="bi bi-check-circle-fill"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-              <li><i class="bi bi-check-circle-fill"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Ibu Jari di Belakang Neck:</strong> Letakkan ibu jari di bagian belakang neck (tidak terlihat dari depan).</li>
+              <li><i class="bi bi-check-circle-fill"></i><strong>Jari Melengkung:</strong> Jari-jari lainnya harus melengkung dan menekan senar dengan ujung jari.</li>
+              <li><i class="bi bi-check-circle-fill"></i> <strong>Tekanan Cukup:</strong> Jangan terlalu keras menekan, tapi cukup agar suara terdengar jernih.</li>
+              <li><i class="bi bi-check-circle-fill"></i> <strong>Posisi Tangan Fleksibel:</strong> Jangan terlalu tegang. Usahakan rileks agar bisa berpindah akor dengan cepat.</li>
             </ul>
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-            </p>
+             <p>kenapa itu penting? karena dengan memiliki posisi jari yang benar akan membuat permainan gitar lebih nyaman dan mengurangi risiko cedera pada jari dan pergelangan tangan kita, walaupun pada awalnya tetap akan terasa pegal dan sakit tapi jika caranya sudah benar pasti kedepannya pun akan lebih mudah. Dan dibawah ini ada video tutorialnya untuk kalian pelajari posisi jari yang baik untuk bermain gitar.</p>
 
             <div class="position-relative mt-4">
-              <img src="{{ asset('/img/acoustic-guitar.jpg')}}" class="img-fluid rounded-4" alt="">
+              <img src="{{ asset('/img/jari-gitar.jpg')}}" class="img-fluid rounded-4" alt="">
               <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
             </div>
           </div>
@@ -138,7 +150,7 @@
               <a href="{{ route('quiz') }}" class="stretched-link">
                 <h3>QUIZ</h3>
               </a>
-              <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis.</p>
+              <p>QUIZ adalah tempat untuk kamu mengukur sejauh mana pengetahuanmu tentang gitar.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
@@ -155,7 +167,7 @@
               <a href="mentoring.blade.php" class="stretched-link">
                 <h3>Mentoring</h3>
               </a>
-              <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.</p>
+              <p>Mentoring adalah tempat atau layanan kami untuk membantu proses belajar kamu agar kamu bisa bertanya secara langsung.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
@@ -172,7 +184,7 @@
               <a href="materi.blade.php" class="stretched-link">
                 <h3>Materi</h3>
               </a>
-              <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.</p>
+              <p>Disini kamu akan mendapatkan banyak informasi tentang gitar seperti chord dasar, cara strumming(genjreng), teknik petikan, dan lainnya.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
@@ -229,25 +241,25 @@
         <li class="nav-item col-3">
           <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
             <i class="bi bi-binoculars"></i>
-            <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
+            <h4 class="d-none d-lg-block">Bagaimana dengan gitar Akustik?</h4>
           </a>
         </li>
         <li class="nav-item col-3">
           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
             <i class="bi bi-box-seam"></i>
-            <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
+            <h4 class="d-none d-lg-block">Bagaimana dengan gitar Classic?</h4>
           </a>
         </li>
         <li class="nav-item col-3">
           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
             <i class="bi bi-brightness-high"></i>
-            <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
+            <h4 class="d-none d-lg-block">Bagaimana dengan gitar Elektrik?</h4>
           </a>
         </li>
         <li class="nav-item col-3">
           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
             <i class="bi bi-command"></i>
-            <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
+            <h4 class="d-none d-lg-block">Bagaimana dengan gitar Bass?</h4>
           </a>
         </li>
       </ul><!-- End Tab Nav -->
@@ -257,22 +269,21 @@
         <div class="tab-pane fade active show" id="features-tab-1">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-              <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+              <h3>Gitar Akustik</h3>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                 Gitar akustik biasanya menggunakan <strong>senar baja (steel string)</strong> dan memiliki suara yang lebih terang dan nyaring. Cocok untuk musik pop, folk, reggae, dan ska.
               </p>
+              <h4>Ciri ciri gitar Akustik :</h4>
               <ul>
                 <li><i class="bi bi-check2-all color-primary"></i>
-                  <spab>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</spab>
+                  <span>Senar Baja (Steel String)</span>
                 </li>
-                <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit</span>.</li>
-                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Suara terang dan nyaring</span>.</li>
+                <li><i class="bi bi-check2-all"></i> <span>Body besar dengan lubang suara (sound hole)</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Leher gitar akustik biasanya lebih ramping dan tipis, memudahkan pemain untuk memainkan akord dan solo.</span></li> 
               </ul>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+               Gitar akustik dapat dimainkan baik dengan jari secara langsung maupun menggunakan pick (plektrum), tergantung pada gaya musik dan kenyamanan pemain. Pemula sangat disarankan untuk melatih teknik dasar seperti <em>strumming</em> untuk mengiringi lagu, serta <em>fingerstyle</em> untuk menghasilkan permainan yang lebih melodius dan dinamis. Pada tahap awal, mungkin jari-jari akan terasa sakit atau perih saat menekan senar baja yang lebih keras dibanding senar nylon, namun ini merupakan hal yang wajar dan akan membaik seiring waktu. Konsistensi dalam latihan akan membantu membentuk kekuatan dan ketahanan jari, sekaligus meningkatkan koordinasi tangan kanan dan kiri dalam memainkan lagu-lagu favorit.
               </p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -284,22 +295,21 @@
         <div class="tab-pane fade" id="features-tab-2">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-              <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
+              <h3>Gitar Klasik/Classic</h3>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+                Gitar klasik menggunakan <strong>senar nylon</strong> dan menghasilkan suara yang lembut. Cocok untuk musik klasik, flamenco, dan lagu akustik sederhana. Gitar Klasik/Classic biasanya juga direkomendasikan untuk kamu yg baru mau belajar gitar karena senarnya (Nylon) yg lembut dan tidak sakit.
               </p>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Ciri ciri gitar Klasik/Classic :
               </p>
               <ul>
-                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Senar nylon (lebih lembut untuk jari pemula)</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Neck lebih lebar daripada gitar akustik</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Suara lembut dan hangat</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Tanpa amplifier alias tidak bisa di masukkan dengan kabel jack</span></li>
               </ul>
+              <p>Gitar klasik umumnya dimainkan dengan menggunakan jari-jari tangan kanan secara langsung tanpa bantuan pick, agar bisa menghasilkan dinamika suara yang lebih halus dan ekspresif. Pemain dianjurkan untuk duduk dalam posisi formal, yaitu dengan kaki kiri yang ditinggikan menggunakan penyangga atau footstool, sehingga posisi gitar lebih stabil dan leher gitar mengarah ke atas. Teknik bermain yang umum pada gitar klasik mencakup <em>arpeggio</em> (memetik senar satu per satu secara berurutan) dan <em>plucking</em> (memetik senar secara individu), yang keduanya penting untuk menghasilkan permainan yang bersih dan bernuansa. Disiplin dalam postur dan teknik dasar sangat penting dalam permainan gitar klasik karena berpengaruh langsung pada kenyamanan dan kualitas suara.
+              </p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 text-center">
               <img src="{{ asset('/img/guitar-photo.jpg')}}" alt="" class="img-fluid">
@@ -310,20 +320,19 @@
         <div class="tab-pane fade" id="features-tab-3">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-              <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
+              <h3>Gitar Elektrik</h3>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+                Gitar elektrik membutuhkan <strong>amplifier</strong> untuk mengeluarkan suara. Gitar elektrik juga banyak digunakan dalam musik rock, jazz, blues, dan metal. Karena gitar elektrik bisa menggunakan berbagai macam efek agar menghasilkan suara tertentu yang di butuhkan atau di inginkan, contohnya seperti efek <em>Distorsi, Delay, Chorus, dan lain lain</em>
               </p>
+              <p>Ciri ciri Gitar Elektrik :</p>
               <ul>
-                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Body solid (tidak berlubang)</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Harus disambung ke amplifier untuk mengeluarkan suaranya</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Suara bisa dimodifikasi dengan efek</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Lebih mudah ditekan (action lebih rendah) karena senar gitar elektrik lebih ringan dibanding gitar akustik</span></li>
               </ul>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                 Gitar elektrik biasanya dimainkan menggunakan pick untuk memberikan presisi dan kecepatan, terutama saat memainkan melodi atau riff yang kompleks. Pemula sebaiknya mulai mempelajari teknik dasar seperti <em>bending</em>, <em>vibrato</em>, dan <em>slide</em>, yang sangat penting dalam membentuk karakter suara saat bermain solo. Selain itu, pemain juga perlu memahami berbagai efek suara seperti <strong>distortion</strong>, <strong>reverb</strong>, dan <strong>delay</strong>, karena efek-efek ini membantu menciptakan warna dan nuansa yang khas dalam berbagai genre musik seperti rock, metal, blues, dan jazz. Latihan yang konsisten dan eksplorasi terhadap pedal efek akan sangat membantu dalam mengembangkan gaya bermain yang unik.
               </p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -335,24 +344,24 @@
         <div class="tab-pane fade" id="features-tab-4">
           <div class="row">
             <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-              <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
+              <h3>Gitar Bass / Bass</h3>
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                culpa qui officia deserunt mollit anim id est laborum
+               <strong>Bass</strong> menghasilkan nada rendah dan berfungsi sebagai fondasi ritme. Meski bentuknya mirip gitar, bass berperan penting dalam menjaga groove dan tempo lagu.
               </p>
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Ciri ciri Gitar Bass atau Bass :
               </p>
               <ul>
-                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat.</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Duis aute irure dolor in reprehenderit in voluptate velit.</span></li>
-                <li><i class="bi bi-check2-all"></i> <span>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Biasanya hanya memiliki 4 senar (tetapi ada juga yang 5 - 6 senar)</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Standar Tuningnya adalah nada E-A-D-G</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Senar lebih tebal dan suara lebih rendah</span></li>
+                <li><i class="bi bi-check2-all"></i> <span>Leher lebih panjang dari gitar biasa</span></li>
               </ul>
+              <p>Dalam bermain bass, teknik dasar yang paling umum adalah memetik senar menggunakan jari telunjuk dan tengah secara bergantian, dikenal dengan teknik <em>fingerstyle</em>. Pemula sebaiknya fokus terlebih dahulu pada menjaga ritme dan stabilitas permainan, karena bass berperan penting sebagai penopang irama dalam sebuah lagu. Selain itu, latihan teknik dasar seperti <strong>plucking</strong> (memetik senar), <strong>muting</strong> (meredam senar agar tidak berbunyi berlebihan), dan <strong>slap-pop</strong> (memukul dan menarik senar untuk suara yang lebih tajam) akan membantu memperkaya karakter permainan bass. Kunci dari bermain bass adalah konsistensi dan rasa terhadap groove, sehingga latihan yang teratur sangat penting untuk mengembangkan kemampuan ini.
+              </p>
             </div>
             <div class="col-lg-6 order-1 order-lg-2 text-center">
-              <img src="{{ asset('/img/photo-guitar1.jpg')}}" alt="" class="img-fluid">
+              <img src="{{ asset('/img/gitar-bass1.jpg')}}" alt="" class="img-fluid">
             </div>
           </div>
         </div><!-- End Tab Content Item -->

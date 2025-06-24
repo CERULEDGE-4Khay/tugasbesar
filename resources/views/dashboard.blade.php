@@ -36,7 +36,7 @@
     <div class="card">
         <h3>Modul Terakhir</h3>
         <p>Chord Dasar: G, C, D</p>
-        <a href="index" class="btn btn-primary">Lanjut Belajar</a>
+        <a href="/index" class="btn btn-primary">Lanjut Belajar</a>
     </div>
 
     <div class="card">
