@@ -12,7 +12,7 @@
       <h2 data-aos="fade-up" data-aos-delay="100">LEARN. PRACTICE. PRODUCE.</h2>
       <p data-aos="fade-up" data-aos-delay="200">Tempat belajar gitar mulai dari dasar sampai <span class="text-danger">JAGO</span></p>
       <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-        <a href="#about" class="btn btn-lg btn-success">Get Started</a>
+        <a href="/login" class="btn btn-lg btn-success">Get Started</a>
         <a href="https://youtu.be/Yw74sDWPH7U?si=EPYZwD2HyA40g07z" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
       </div>
     </div>
@@ -62,7 +62,7 @@
 
             <div class="position-relative mt-4">
               <img src="{{ asset('/img/jari-gitar.jpg')}}" class="img-fluid rounded-4" alt="">
-              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+              <a href="https://youtu.be/LYUFX3oGCpI?si=zH4jQbDOFq84vhYg" class="glightbox pulsating-play-btn"></a>
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@
             </div>
             <div class="details position-relative">
               <div class="icon">
-                <i class="bi bi-activity"></i>
+                <i class="bi bi-book-half"></i>
               </div>
               <a href="{{ route('quiz') }}" class="stretched-link">
                 <h3>QUIZ</h3>
@@ -162,7 +162,7 @@
             </div>
             <div class="details position-relative">
               <div class="icon">
-                <i class="bi bi-broadcast"></i>
+                <i class="bi bi-calendar2-event"></i>
               </div>
               <a href="mentoring.blade.php" class="stretched-link">
                 <h3>Mentoring</h3>
@@ -240,25 +240,25 @@
       <ul class="nav nav-tabs row  d-flex" data-aos="fade-up" data-aos-delay="100">
         <li class="nav-item col-3">
           <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#features-tab-1">
-            <i class="bi bi-binoculars"></i>
+            <i class="bi bi-music-note"></i>
             <h4 class="d-none d-lg-block">Bagaimana dengan gitar Akustik?</h4>
           </a>
         </li>
         <li class="nav-item col-3">
           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-2">
-            <i class="bi bi-box-seam"></i>
+            <i class="bi bi-music-note-beamed"></i>
             <h4 class="d-none d-lg-block">Bagaimana dengan gitar Classic?</h4>
           </a>
         </li>
         <li class="nav-item col-3">
           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-3">
-            <i class="bi bi-brightness-high"></i>
+            <i class="bi bi-vinyl"></i>
             <h4 class="d-none d-lg-block">Bagaimana dengan gitar Elektrik?</h4>
           </a>
         </li>
         <li class="nav-item col-3">
           <a class="nav-link" data-bs-toggle="tab" data-bs-target="#features-tab-4">
-            <i class="bi bi-command"></i>
+            <i class="bi bi-vinyl-fill"></i>
             <h4 class="d-none d-lg-block">Bagaimana dengan gitar Bass?</h4>
           </a>
         </li>
@@ -377,8 +377,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Services</h2>
-      <p>CHECK OUR SERVICES</p>
+      <h2>Hi! Whats up?</h2>
+      <p>LETS INTERMEZZO</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -387,60 +387,60 @@
 
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
           <div class="service-item d-flex position-relative h-100">
-            <i class="bi bi-briefcase icon flex-shrink-0"></i>
+            <i class="bi bi-compass icon flex-shrink-0"></i>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4 class="title"><a href="#" class="stretched-link">Sejarah Gitar</a></h4>
+              <p class="description">Gitar sudah ada sejak ribuan tahun lalu, berevolusi dari instrumen petik kuno hingga menjadi alat musik modern yang digunakan dalam berbagai genre.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
 
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
           <div class="service-item d-flex position-relative h-100">
-            <i class="bi bi-card-checklist icon flex-shrink-0"></i>
+            <i class="bi bi-music-player-fill icon flex-shrink-0"></i>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-              <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4 class="title"><a href="#" class="stretched-link">Musisi Legendaris</a></h4>
+              <p class="description">Nama-nama seperti Jimi Hendrix, Eric Clapton, dan Yuki Yamada menginspirasi banyak gitaris dengan gaya bermain yang unik dan pengaruh global.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
 
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div class="service-item d-flex position-relative h-100">
-            <i class="bi bi-bar-chart icon flex-shrink-0"></i>
+            <i class="bi bi-patch-question icon flex-shrink-0"></i>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <h4 class="title"><a href="#" class="stretched-link">Tools para Musisi</a></h4>
+              <p class="description">Gunakan tuner, capo, metronome, serta aplikasi rekaman digital untuk mendukung proses belajar dan memperluas kreativitas bermain musik.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
 
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
           <div class="service-item d-flex position-relative h-100">
-            <i class="bi bi-binoculars icon flex-shrink-0"></i>
+            <i class="bi bi-lightbulb icon flex-shrink-0"></i>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <h4 class="title"><a href="#" class="stretched-link">Tips Latihan Gitar</a></h4>
+              <p class="description">Luangkan waktu minimal 15 menit per hari, fokus pada konsistensi, dan gunakan metronome agar latihan jadi lebih efektif dan rapi.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
 
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
           <div class="service-item d-flex position-relative h-100">
-            <i class="bi bi-brightness-high icon flex-shrink-0"></i>
+            <i class="bi bi-people-fill icon flex-shrink-0"></i>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <h4 class="title"><a href="#" class="stretched-link">Gitaris Vs Vokalis?</a></h4>
+              <p class="description">Siapa yang lebih penting? Ternyata, keduanya saling melengkapi. Tapi banyak gitaris sukses yang juga jadi vokalis utama, loh!</p>
             </div>
           </div>
         </div><!-- End Service Item -->
 
         <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
           <div class="service-item d-flex position-relative h-100">
-            <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
+            <i class="bi bi-info-circle-fill icon flex-shrink-0"></i>
             <div>
-              <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-              <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi</p>
+              <h4 class="title"><a href="#" class="stretched-link">Gear Wajib Gitaris Now</a></h4>
+              <p class="description">Capo, loop pedal, audio interface — alat-alat ini bikin permainanmu makin kreatif dan bisa tampil layaknya profesional dari rumah.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
@@ -486,7 +486,7 @@
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.</span>
+                <span>Menurut saya website ini bisa membantu orang orang yang ingin belajar gitar tapi bingung mulai darimana dan bisa memberikan feedback untuk mereka.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
@@ -495,8 +495,8 @@
           <div class="swiper-slide">
             <div class="testimonial-item">
               <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-              <h3>Sara Wilsson</h3>
-              <h4>Coach</h4>
+              <h3>Helmi</h3>
+              <h4>Visitor</h4>
               <div class="stars">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
@@ -569,8 +569,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Recommended</h2>
-      <p>CHECK OUR RECOMMENDED ITEM</p>
+      <h2>List Item</h2>
+      <p>OUR RECOMMENDED ITEM</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -582,7 +582,7 @@
           <li data-filter=".filter-app">Guitar Classic</li>
           <li data-filter=".filter-product">Guitar Accoustic</li>
           <li data-filter=".filter-branding">Guitar Electric</li>
-          <li data-filter=".filter-books">Ukulele</li>
+          <li data-filter=".filter-books">Bass</li>
         </ul><!-- End Portfolio Filters -->
 
         <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
@@ -625,11 +625,11 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/ukulele-foto2.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/gitar-bass1.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Ukulele 1</h4>
+                <h4>Bass 1</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/ukulele-foto2.jpg')}}" title="Ukulele 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/gitar-bass1.jpg')}}" title="Bass 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -673,11 +673,11 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/ukulele-foto1.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/gitar-bass2.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Ukulele 2</h4>
+                <h4>Bass 2</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/ukulele-foto1.jpg')}}" title="Ukulele 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/gitar-bass2.jpg')}}" title="Bass 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -721,11 +721,11 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/ukulele-foto.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/gitar-bass3.png')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Ukulele 3</h4>
+                <h4>Bass 3</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/ukulele-foto.jpg')}}" title="Ukulele 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/gitar-bass3.png')}}" title="Bass 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -777,14 +777,14 @@
               <div class="social">
                 <a href=""><i class="bi bi-twitter-x"></i></a>
                 <a href=""><i class="bi bi-facebook"></i></a>
-                <a href=""><i class="bi bi-instagram"></i></a>
-                <a href=""><i class="bi bi-linkedin"></i></a>
+                <a href="https://www.instagram.com/m.khairan22"><i class="bi bi-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/khairan-mochamad-150117371"><i class="bi bi-linkedin"></i></a>
               </div>
             </div>
           </div>
         </div><!-- End Team Member -->
 
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        {{-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
           <div class="member">
             <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
             <div class="member-info">
@@ -798,7 +798,7 @@
               </div>
             </div>
           </div>
-        </div><!-- End Team Member -->
+        </div><!-- End Team Member --> --}}
 
       </div>
 
