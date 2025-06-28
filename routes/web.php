@@ -43,6 +43,9 @@ Route::get('/courses', function () {
 Route::get('/index', function(){
     return view('layouts.index');
 });
+Route::get('/latihaninteraktif', function () {
+    return view('latihaninteraktif');
+});
 
 
 Route::middleware(['auth'])->group(function () {

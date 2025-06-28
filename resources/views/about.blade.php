@@ -8,8 +8,9 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(/img/guitar1.jpg);">
       <div class="container position-relative">
-        <h1>Starter Page</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
+        <h1>About PickItUp</h1>
+        <p>Apa itu PickItUp? kenapa harus Pickitup? mengapa Pickitup ada?
+        </p>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="/">Home</a></li>
@@ -24,12 +25,12 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Starter Section Title<br></p>
+        <h2>Mengenal Pickitup</h2>
+        <p>Apa itu PickItUp?<br></p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
+        <p><strong>PickItUp</strong> ini merupakan platform pembelajaran online yang ditujukan untuk pemula yang ingin belajar bermain gitar mulai dari dasar sampai <strong>jago</strong>. Platform ini menyediakan materi teori, katalog chord, latihan interaktif, dan video tutorial, dengan desain tampilan yang responsif dan mudah digunakan.</p>
       </div>
 
     </section><!-- /Starter Section Section -->
