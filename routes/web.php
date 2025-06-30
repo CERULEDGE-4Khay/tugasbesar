@@ -23,6 +23,9 @@ Route::get('/register', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard/admin', function () {
+    return view('admin.index');
+})->middleware(['auth'])->name('dashboard.admin');
 
 Route::get('/contact', function () {
     return view('contact');
