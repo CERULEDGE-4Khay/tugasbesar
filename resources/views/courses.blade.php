@@ -1,21 +1,17 @@
 @extends('layouts.guest')
 
-@section('title', 'Detail Kursus')
+@section('title', $courses->title) {{-- Assuming you pass a single $courses object --}}
 
 @section('content')
-    <h2 class="text-2xl font-bold">{{ $course->title }}</h2>
-    <p class="text-gray-700">{{ $course->description }}</p>
-    <p class="text-sm text-blue-500 mt-1">Level: {{ ucfirst($course->level) }}</p>
+    <div class="container my-5"> {{-- Bootstrap container for proper spacing --}}
+        <div class="card shadow-sm"> {{-- A card to contain the courses details --}}
+            <div class="card-body">
+                <h2 class="card-title fw-bold mb-3">{{ $courses->title }}</h2> {{-- Bootstrap heading with bold and bottom margin --}}
+                <p class="card-text text-muted mb-3">{{ $courses->description }}</p> {{-- Bootstrap text muted for description --}}
+                <p class="small text-primary mb-0">Level: <span class="fw-medium">{{ ucfirst($courses->level) }}</span></p> {{-- Bootstrap small text, primary color --}}
+            </div>
+        </div>
 
-    <h3 class="mt-6 text-xl font-semibold">🎬 Video Materi</h3>
-    <ul class="mt-2">
-        @foreach ($course->videos as $video)
-            <li class="mb-2">
-                <strong>{{ $video->title }}</strong>
-                <a href="{{ route('videos.watch', $video->id) }}" class="text-blue-600 ml-2">[Tonton]</a>
-            </li>
-        @endforeach
-    </ul>
-
-    <a href="{{ route('courses.index') }}" class="mt-4 inline-block text-gray-500 hover:text-black">← Kembali ke Kursus</a>
+        <a href="/dashboard" class="btn btn-link text-secondary mt-4 p-0">← Kembali ke Kursus</a>
+    </div>
 @endsection

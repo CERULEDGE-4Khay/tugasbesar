@@ -147,8 +147,8 @@
               <div class="icon">
                 <i class="bi bi-book-half"></i>
               </div>
-              <a href="{{ route('quiz') }}" class="stretched-link">
-                <h3>QUIZ</h3>
+              <a href="/latihaninteraktif" class="stretched-link">
+                <h3>Latihan Interaktif</h3>
               </a>
               <p>QUIZ adalah tempat untuk kamu mengukur sejauh mana pengetahuanmu tentang gitar.</p>
             </div>
@@ -740,7 +740,7 @@
   </section><!-- /Portfolio Section -->
 
   <!-- Team Section -->
-  <section id="team" class="team section light-background">
+  {{-- <section id="team" class="team section light-background">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
@@ -766,7 +766,7 @@
               </div>
             </div>
           </div>
-        </div><!-- End Team Member --> --}}
+        </div>
 
         <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
           <div class="member">
@@ -798,13 +798,13 @@
               </div>
             </div>
           </div>
-        </div><!-- End Team Member --> --}}
+        </div><!-- End Team Member -->
 
       </div>
 
     </div>
 
-  </section><!-- /Team Section -->
+  </section>--}}
 
   <!-- Contact Section -->
   <section id="contact" class="contact section">

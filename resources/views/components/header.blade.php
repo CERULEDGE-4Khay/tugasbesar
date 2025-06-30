@@ -10,9 +10,7 @@
       <ul>
         <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
         <li><a href="/about" class="{{ request()->is('about') ? 'active' : '' }}">About</a></li>
-        <li><a href="/service" class="{{ request()->is('service') ? 'active' : '' }}">Services</a></li>
         <li><a href="{{ route('dashboard') }}" class="{{ request()->is('dashboard') ? 'active' : '' }}">DashBoard</a></li>
-        <li><a href="/team" class="{{ request()->is('team') ? 'active' : '' }}">Team</a></li>
         <li class="dropdown"><a href="#"><span>Pilihan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">Materi Gitar</a></li>

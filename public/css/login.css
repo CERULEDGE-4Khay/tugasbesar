@@ -12,7 +12,7 @@ body {
   align-items: center;
   min-height: 100vh;
   background: #04238a; 
-  background: url('/img/electric-guitar-bg.jpg') no-repeat center center fixed;
+  background: url('/img/bg-pickitup.jpg') no-repeat center center fixed;
   background-size: cover;
   margin: 0;
 }

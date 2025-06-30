@@ -34,14 +34,13 @@ class LearningController extends Controller
     public function courses()
     {
         $courses = Courses::orderBy('order')->get();
-        return view('layouts.index', compact('courses'));
+        return view('index', compact('courses'));
     }
 
     // Menampilkan detail kursus dan videonya
-    public function courseDetail($id)
+    public function courseDetail(Courses $courses)
     {
-        $course = Courses::with('videos')->findOrFail($id);
-        return view('courses', compact('course'));
+        return view('courses', compact('courses'));
     }
 
     // Tonton video

@@ -1,23 +1,22 @@
-@extends('layouts.guest')
-
-@section('content')
+@extends('layouts.guest') @section('content')
 
 <section id="hero" class="hero section dark-background">
-
-    <img src="{{ asset('img/guitar-testimoni.jpg')}}" alt="" data-aos="fade-in">
+    <img src="{{ asset('img/guitar-testimoni.jpg')}}" alt="" data-aos="fade-in" />
 
     <div class="container d-flex flex-column align-items-center">
-      <h2 data-aos="fade-up" data-aos-delay="100">LATIHAN INTERAKTIF</h2>
-      <p data-aos="fade-up" data-aos-delay="200">Keren udah siap untuk latihan? sekarang tinggal pilih apa yang kamu mau?</p>
+        <h2 data-aos="fade-up" data-aos-delay="100">LATIHAN INTERAKTIF</h2>
+        <p data-aos="fade-up" data-aos-delay="200">Keren udah siap untuk latihan? sekarang tinggal pilih apa yang kamu mau?</p>
     </div>
-
 </section>
- <div class="container section-title m-5" data-aos="fade-up">
-      <h2>Pickitup</h2>
-      <p>Latihan Interaktif<br></p>
-    </div>
+<section id="services" class="services section">
 
-     <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>PICKITUP</h2>
+      <p>Latihan Interaktif<br></p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
       <div class="row gy-5">
 
@@ -30,8 +29,8 @@
               <div class="icon">
                 <i class="bi bi-book-half"></i>
               </div>
-              <a href="{{ route('quiz') }}" class="stretched-link">
-                <h3>QUIZ VISUAL</h3>
+              <a href="#" class="stretched-link">
+                <h3>QUIZ TEBAK CHORD</h3>
               </a>
               <p>QUIZ adalah tempat untuk kamu mengukur sejauh mana pengetahuanmu tentang gitar.</p>
             </div>
@@ -48,7 +47,7 @@
                 <i class="bi bi-calendar2-event"></i>
               </div>
               <a href="mentoring.blade.php" class="stretched-link">
-                <h3>QUIZ MATERI</h3>
+                <h3>QUIZ PILIHAN GANDA</h3>
               </a>
               <p>Mentoring adalah tempat atau layanan kami untuk membantu proses belajar kamu agar kamu bisa bertanya secara langsung.</p>
             </div>
@@ -75,5 +74,7 @@
       </div>
 
     </div>
+
+  </section><!-- /Services Section -->
 
 @endsection

@@ -48,14 +48,6 @@
     </div>
 
     <div class="card">
-        <h3>Jadwal Latihan Minggu Ini</h3>
-        <ul>
-            <li>✔️ Senin: Chord A & D</li>
-            <li>🕓 Selasa: Strumming Pola 1</li>
-        </ul>
-    </div>
-
-    <div class="card">
         <h3>Pencapaian</h3>
         <ul>
             <li>🏆 ✔️ Menguasai 10 Chord Dasar</li>
