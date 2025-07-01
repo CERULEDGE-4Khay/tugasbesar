@@ -48,11 +48,11 @@
             <div class="row gy-4">
 
               <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required="">
+                <input type="text" name="name" class="form-control" placeholder="Your Name" required="name">
               </div>
 
               <div class="col-md-6 ">
-                <input type="email" class="form-control" name="email" placeholder="Your Email" required="">
+                <input type="email" class="form-control" name="email" placeholder="Your Email" required="email">
               </div>
 
               <div class="col-md-12">

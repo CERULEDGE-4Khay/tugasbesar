@@ -225,3 +225,19 @@ footer {
   margin-top: 6px;
   font-size: 13px;
 }
+
+.input-box {
+    position: relative;
+
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    z-index: 10;
+    cursor: pointer;
+}

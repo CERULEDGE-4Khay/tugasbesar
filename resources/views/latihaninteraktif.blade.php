@@ -32,7 +32,7 @@
               <a href="#" class="stretched-link">
                 <h3>QUIZ TEBAK CHORD</h3>
               </a>
-              <p>QUIZ adalah tempat untuk kamu mengukur sejauh mana pengetahuanmu tentang gitar.</p>
+              <p>Di quiz ini kamu bisa mengukur berapa banyak Chord yg sudah kamu ketahui.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
@@ -49,7 +49,7 @@
               <a href="mentoring.blade.php" class="stretched-link">
                 <h3>QUIZ PILIHAN GANDA</h3>
               </a>
-              <p>Mentoring adalah tempat atau layanan kami untuk membantu proses belajar kamu agar kamu bisa bertanya secara langsung.</p>
+              <p>Di quiz ini akan ada soal jawab tentang gitar dan kamu bisa tau seberapa jauh pengetahuan kamu.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
@@ -64,9 +64,9 @@
                 <i class="bi bi-easel"></i>
               </div>
               <a href="materi.blade.php" class="stretched-link">
-                <h3>Materi</h3>
+                <h3>Daftar Kursus</h3>
               </a>
-              <p>Disini kamu akan mendapatkan banyak informasi tentang gitar seperti chord dasar, cara strumming(genjreng), teknik petikan, dan lainnya.</p>
+              <p>Disini kamu dapat melihat kursus apa saja yang telah kamu ambil dan melihat progressnya.</p>
             </div>
           </div>
         </div><!-- End Service Item -->

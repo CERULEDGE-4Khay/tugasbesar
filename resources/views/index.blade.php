@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="container my-5"> {{-- Bootstrap container for proper spacing and centering --}}
-        <h2 class="text-center mb-4 fw-bold">📚 Daftar Kursus Belajar Gitar</h2>
+        <h2 class="text-center mb-4 fw-bold bi-bell">Daftar Kursus Kamu</h2>
 
         <div class="row justify-content-center"> {{-- Centering the content column --}}
             <div class="col-lg-8"> {{-- Limiting width for better readability on larger screens --}}
