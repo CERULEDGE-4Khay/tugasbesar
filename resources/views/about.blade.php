@@ -54,21 +54,21 @@
         </ul>
       </div>
 
-      <div class="container section-title text-center" data-aos="fade-up">
+      <div class="container section-title text-center" data-aos="fade-right">
         <p>Visi Kami</p>
         <h1>Menjadi platform belajar gitar online terdepan bagi pemula, dengan pendekatan modern, terstruktur, dan menyenangkan.
         </h1>
       </div>
-       <div class="container section-title text-center" data-aos="fade-up">
+       <div class="container section-title text-center" data-aos="fade-left">
          <p>Misi Kami</p>
          <h4>
-          <ul>
+          <ol>
             <li>Menyediakan materi pembelajaran gitar yang berkualitas dan mudah dipahami, mulai dari dasar hingga teknik lanjutan.</li>
             <li>Menggunakan teknologi untuk menciptakan pengalaman belajar yang interaktif dan fleksibel, kapan pun dan di mana pun.</li>
             <li>Mendorong perkembangan setiap pengguna melalui sistem progress tracking, reward, dan sertifikat digital.</li>
             <li>Menyediakan akses ke bimbingan mentor profesional untuk mendampingi proses belajar pengguna secara personal.</li>
             <li>Terus berinovasi dalam menyediakan fitur-fitur pembelajaran yang relevan dengan kebutuhan generasi digital saat ini.</li>
-          </ul>
+          </ol>
         </h4>
       </div>
     </section>

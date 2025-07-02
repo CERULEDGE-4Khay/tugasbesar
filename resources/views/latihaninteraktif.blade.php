@@ -63,7 +63,7 @@
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <a href="materi.blade.php" class="stretched-link">
+              <a href="/courses" class="stretched-link">
                 <h3>Daftar Kursus</h3>
               </a>
               <p>Disini kamu dapat melihat kursus apa saja yang telah kamu ambil dan melihat progressnya.</p>

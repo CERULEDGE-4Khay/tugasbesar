@@ -37,4 +37,11 @@ class LoginController extends Controller
         $this->middleware('guest')->except('logout');
         $this->middleware('auth')->only('logout');
     }
+    protected function sendLoginResponse(\Illuminate\Http\Request $request)
+    {
+        $request->session()->regenerate();
+        session()->flash('success', 'Login berhasil!');
+        return redirect()->intended($this->redirectPath());
+    }
+
 }

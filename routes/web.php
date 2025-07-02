@@ -42,7 +42,9 @@ Route::get('/index', function(){
 });
 Route::get('/latihaninteraktif', function () {
     return view('latihaninteraktif');
-});
+})->middleware('auth')->name('latihaninteraktif');
+
+
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [LearningController::class, 'dashboard'])->name('dashboard');

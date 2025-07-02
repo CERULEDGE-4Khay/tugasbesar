@@ -1,6 +1,7 @@
 @extends('layouts.guest')
 
 @section('content')
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <main class="main">
 
   <!-- Hero Section -->
@@ -886,5 +887,19 @@
 
   </section><!-- /Contact Section -->
 
+  
+    @if (session('success'))
+    <script>
+        Swal.fire({
+            toast: true,
+            position: 'top-end',
+            icon: 'success',
+            title: '{{ session('success') }}',
+            showConfirmButton: false,
+            timer: 5000,
+            timerProgressBar: true,
+        });
+    </script>
+    @endif
 </main>
 @endsection

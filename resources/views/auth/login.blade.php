@@ -2,6 +2,20 @@
 
 @section('content')
 <link rel="stylesheet" href="css/login.css" />
+<!-- SweetAlert2 CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+@if (session('error'))
+    <script>
+        Swal.fire({
+            icon: 'warning',
+            title: 'Oops...',
+            text: '{{ session('error') }}',
+            confirmButtonColor: '#3085d6'
+        });
+    </script>
+@endif
+
+
 <div class="container" style="height: 850px;">
     <form method="POST" action="{{ route('login') }}">
         @csrf
@@ -27,7 +41,7 @@
                     👁️
                 </button>
             </div>
-                <button class="btn btn-success mt-3 w-100" type="submit">Login</button>
+            <button class="btn btn-success mt-3 w-100" type="submit">Login</button>
             <hr />
             <div class="links">
                 <a href="/verify">Forgot Password?</a>
@@ -51,6 +65,7 @@
 </div>
 
 <script>
+
     function togglePassword() {
         const passwordField = document.getElementById("password");
         if (passwordField.type === "password") {
@@ -60,5 +75,12 @@
         }
     }
 </script>
+
+@if (session('error'))
+    <div class="alert alert-danger">
+        {{ session('error') }}
+    </div>
+@endif
+
 
 @endsection
