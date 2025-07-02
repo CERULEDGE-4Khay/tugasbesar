@@ -12,8 +12,8 @@
       <h2 data-aos="fade-up" data-aos-delay="100">LEARN. PRACTICE. PRODUCE.</h2>
       <p data-aos="fade-up" data-aos-delay="200">Tempat belajar gitar mulai dari dasar sampai <span class="text-danger">JAGO</span></p>
       <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-        <a href="/login" class="btn btn-lg btn-success">Get Started</a>
-        <a href="https://youtu.be/Yw74sDWPH7U?si=EPYZwD2HyA40g07z" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+        <a href="/login" class="btn btn-lg btn-success">Mulai</a>
+        <a href="https://youtu.be/Yw74sDWPH7U?si=EPYZwD2HyA40g07z" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Tonton Video</span></a>
       </div>
     </div>
 
@@ -130,8 +130,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Services</h2>
-      <p>PickItUp Services<br></p>
+      <h2>Pelayanan</h2>
+      <p>Layanan PickItUp<br></p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -378,7 +378,7 @@
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Hi! Whats up?</h2>
-      <p>LETS INTERMEZZO</p>
+      <p>SEKEDAR INFO</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -454,7 +454,7 @@
   <!-- Testimonials Section -->
   <section id="testimonials" class="testimonials section dark-background">
 
-    <img src="/img/guitar-testimoni.jpg" class="testimonials-bg" alt="">
+    <img src="/img/guitar-testimoni.jpg" class="testimonials-bg" alt="background testi">
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
@@ -478,7 +478,7 @@
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="/img/guitar3.jpg" class="testimonial-img" alt="">
+              <img src="/img/guitar3.jpg" class="testimonial-img" alt="foto testimoni 1">
               <h3>M.Khairan Athallah S</h3>
               <h4>Ceo &amp; Founder</h4>
               <div class="stars">
@@ -494,9 +494,9 @@
 
           <div class="swiper-slide">
             <div class="testimonial-item">
-              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+              <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="foto testimoni 2">
               <h3>Helmi</h3>
-              <h4>Visitor</h4>
+              <h4>Pengunjung</h4>
               <div class="stars">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
@@ -569,8 +569,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>List Item</h2>
-      <p>OUR RECOMMENDED ITEM</p>
+      <h2>List Barang</h2>
+      <p>Rekomendasi dari kami</p>
     </div><!-- End Section Title -->
 
     <div class="container">
@@ -589,7 +589,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/guitar-classic-foto.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/guitar-classic-foto.jpg')}}" class="img-fluid" alt="gitar klasik 1">
               <div class="portfolio-info">
                 <h4>Guitar Classic 1</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -601,7 +601,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/photo-guitar1.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/photo-guitar1.jpg')}}" class="img-fluid" alt="gitar akustik 1">
               <div class="portfolio-info">
                 <h4>Guitar Accoustic 1</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -613,7 +613,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/guitar-electric-foto.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/guitar-electric-foto.jpg')}}" class="img-fluid" alt="gitar elektrik">
               <div class="portfolio-info">
                 <h4>Guitar Electric 1</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>

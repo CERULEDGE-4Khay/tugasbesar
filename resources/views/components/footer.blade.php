@@ -9,7 +9,7 @@
         <div class="footer-contact pt-3">
           <p>Jl. Babakan Ciparay</p>
           <p>Kota Bandung, BDG 20255</p>
-          <p class="mt-3"><strong>Phone:</strong> <span>+62878-7263-4316</span></p>
+          <p class="mt-3"><strong>Phone:</strong> <span>+62878-7786-9856</span></p>
           <p><strong>Email:</strong> <span>pickitup@gmail.com</span></p>
         </div>
         <div class="social-links d-flex mt-4">
@@ -23,21 +23,21 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Useful Links</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="/">Home</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="/about">About us</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="/">Beranda</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="/about">Tentang Kami</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Our Services</h4>
+        <h4>Pelayanan Kami</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Guitar Recommended</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Rekomendasi Gitar</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Mentoring</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Materi</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="quiz">Latihan Interaktif</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Guitar Update</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="#">Berita Gitar</a></li>
         </ul>
       </div>
 

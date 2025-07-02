@@ -8,8 +8,8 @@
 
     <nav id="navmenu" class="navmenu">
       <ul>
-        <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Home</a></li>
-        <li><a href="/about" class="{{ request()->is('about') ? 'active' : '' }}">About</a></li>
+        <li><a href="/" class="{{ request()->is('/') ? 'active' : '' }}">Beranda</a></li>
+        <li><a href="/about" class="{{ request()->is('about') ? 'active' : '' }}">Tentang</a></li>
         @auth
           <li><a href="{{ (auth()->user()->role == 'admin') ? route('dashboard.admin') : route('dashboard') }}" class="{{ request()->is('dashboard') ? 'active' : '' }}">DashBoard</a></li>
         @endauth
@@ -30,7 +30,7 @@
             <li><a href="/latihaninteraktif">Latihan Interaktif</a></li>
           </ul>
         </li>
-        <li><a href="/contact" class="{{ request()->is('contact') ? 'active' : '' }}">Contact</a></li>
+        <li><a href="/contact" class="{{ request()->is('contact') ? 'active' : '' }}">Kontak</a></li>
       </ul>
       <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
     </nav>
