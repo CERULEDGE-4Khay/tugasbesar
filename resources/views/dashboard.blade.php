@@ -18,19 +18,10 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="/">Home</a></li>
-            <li class="current">Service Details</li>
+            <li><a href="#">Achievement Saya</a></li>
           </ol>
         </nav>
       </div>
-    </div>
-    
-
-    <div class="card">
-        <h3>Progres Belajar</h3>
-        <div class="progress-bar">
-            <div class="progress" style="width: 90%;"></div>
-        </div>
-        <p>Level: Pemula (90% selesai)</p>
     </div>
 
     <div class="card">
@@ -48,10 +39,26 @@
     </div>
 
     <div class="card">
-        <h3>Pencapaian</h3>
-        <ul>
-            <li>🏆 ✔️ Menguasai 10 Chord Dasar</li>
-            <li>🔒 Teknik Palm Muting (belum terbuka)</li>
+          <h3 class="text-xl font-bold mb-2">Achievement Saya</h3>
+
+    @if(auth()->user()->achievements->count())
+        <ul class="space-y-2">
+            @foreach(auth()->user()->achievements as $achievement)
+                <li class="bg-green-100 p-3 rounded">
+                    <strong>{{ $achievement->name }}</strong>
+                    <strong>{{ $achievement->title }}</strong>
+                    <br>
+                    <small>{{ $achievement->description }}</small>
+                    @if ($achievement->file_path)
+                        <br>
+                        <a href="{{ asset('storage/' . $achievement->file_path) }}" target="_blank" class="text-blue-500 underline">Lihat Sertifikat</a>
+                    @endif
+                </li>
+            @endforeach
         </ul>
+    @else
+        <p class="text-gray-600 italic">Belum ada achievement yang diraih. Yuk selesaikan course!</p>
+    @endif
+
     </div>
 @endsection

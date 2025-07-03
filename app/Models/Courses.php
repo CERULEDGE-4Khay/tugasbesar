@@ -8,8 +8,15 @@ use Illuminate\Database\Eloquent\Model;
 class Courses extends Model
 {
     use HasFactory;
+
+    protected $guarded = ['id'];
+
     public function videos() {
         return $this->hasMany(Videos::class);
     }
+    public function progress(){
+        return $this->hasMany(UserProgress::class);
+    }
+
 
 }

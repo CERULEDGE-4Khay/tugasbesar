@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\LearningController;
+use App\Http\Controllers\UserProgressController;
 use App\Models\Courses;
 
 Route::get('/', function () {
@@ -23,9 +25,17 @@ Route::get('/register', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
-Route::get('/dashboard/admin', function () {
-    return view('admin.index');
-})->middleware(['auth'])->name('dashboard.admin');
+
+Route::prefix('dashboard/admin')->group(function() {
+    Route::get('/', function() {
+        return view('admin.index');
+    })->name('dashboard.admin');
+
+    Route::resource('/course', CourseController::class)->parameters([
+        'course' => 'courses'
+    ]);
+})->middleware(['auth']);
+
 
 Route::get('/contact', function () {
     return view('contact');
@@ -44,7 +54,9 @@ Route::get('/latihaninteraktif', function () {
     return view('latihaninteraktif');
 })->middleware('auth')->name('latihaninteraktif');
 
-
+Route::post('/progress/mark/{video}', [UserProgressController::class, 'markVideoAsCompleted'])
+    ->middleware('auth')
+    ->name('progress.mark');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/dashboard', [LearningController::class, 'dashboard'])->name('dashboard');

@@ -23,9 +23,9 @@
                 </a>
             </header>
 
-            <div class="page-heading">
+            {{-- <div class="page-heading">
                 <h3>Pickitup Statistics</h3>
-            </div>
+            </div> --}}
 
             <div class="page-content">
                 <section class="row">

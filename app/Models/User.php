@@ -42,4 +42,11 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
     ];
+    public function progress(){
+    return $this->hasMany(UserProgress::class);
+    }
+    public function achievements(){
+    return $this->hasMany(\App\Models\Achievements::class);
+    }
+
 }

@@ -54,7 +54,7 @@
         </ul>
       </div>
 
-      <div class="container section-title text-center" data-aos="fade-right">
+      <div class="container section-title text-center mt-5" data-aos="fade-right">
         <p>Visi Kami</p>
         <h1>Menjadi platform belajar gitar online terdepan bagi pemula, dengan pendekatan modern, terstruktur, dan menyenangkan.
         </h1>

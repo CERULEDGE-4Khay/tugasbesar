@@ -151,7 +151,7 @@
               <a href="/latihaninteraktif" class="stretched-link">
                 <h3>Latihan Interaktif</h3>
               </a>
-              <p>QUIZ adalah tempat untuk kamu mengukur sejauh mana pengetahuanmu tentang gitar.</p>
+              <p>Latihan Interaktif itu berisi berbagai quiz berupa gambar dan tulisan yg bisa mengukur pengetahuanmu.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
@@ -185,7 +185,7 @@
               <a href="materi.blade.php" class="stretched-link">
                 <h3>Materi</h3>
               </a>
-              <p>Disini kamu akan mendapatkan banyak informasi tentang gitar seperti chord dasar, cara strumming(genjreng), teknik petikan, dan lainnya.</p>
+              <p>Disini kamu akan mendapatkan banyak informasi tentang gitar seperti chord dasar, cara strumming, teknik petikan, dan lainnya.</p>
             </div>
           </div>
         </div><!-- End Service Item -->

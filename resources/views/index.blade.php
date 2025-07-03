@@ -3,12 +3,17 @@
 @section('title', 'Daftar Kelas')
 
 @section('content')
+<style>
+     .card { background: white; border-radius: 10px; padding: 20px; margin-bottom: 20px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+        .progress-bar { background-color: #ddd; border-radius: 10px; overflow: hidden; }
+        .progress { background-color: #3b82f6; height: 20px; }
+</style>
     <div class="container my-5"> {{-- Bootstrap container for proper spacing and centering --}}
         <h2 class="text-center mb-4 fw-bold bi-bell">Daftar Kursus Kamu</h2>
 
         <div class="row justify-content-center"> {{-- Centering the content column --}}
             <div class="col-lg-8"> {{-- Limiting width for better readability on larger screens --}}
-                <a href="" class="d-flex justify-content-center">
+                <a href="" class="d-flex justify-content-center mb-5">
                     <img src="{{ asset('img/guitar-services.png')}}" alt="Level 1" width="500px">
                 <a>
                 @foreach ($courses as $course)
@@ -25,6 +30,14 @@
                         </div>
                     </div>
                 @endforeach
+    
+            <div class="card">
+                <h3>Progres Belajar</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%;"></div>
+                </div>
+                <p>Level: Pemula (90% selesai)</p>
+            </div>
 
                 @if ($courses->isEmpty())
                     <div class="alert alert-info text-center" role="alert">

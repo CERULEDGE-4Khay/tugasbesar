@@ -8,7 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Videos extends Model
 {
     use HasFactory;
+
     public function course(){
         return $this->belongsTo(Courses::class);
+    }
+    public function progress(){
+        return $this->hasMany(UserProgress::class);
     }
 }

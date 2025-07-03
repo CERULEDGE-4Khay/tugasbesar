@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->enum('tipe', ['beginner', 'intermediate', 'pro'])->default('beginner');
             $table->text('description')->nullable();
+            $table->text('content')->nullable();
             $table->string('level');
             $table->timestamps();
         });
