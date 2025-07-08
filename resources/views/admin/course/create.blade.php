@@ -9,7 +9,7 @@
 <div class="col-md-12">
   <div class="card">
     <div class="card-body">
-      <form action="{{ route('course.store') }}" method="POST">
+      <form action="{{ route('course.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
           <label for="name" class="form-label">Course Name</label>
@@ -21,7 +21,7 @@
 
         <div class="mb-3">
           <label for="video" class="form-label">Video</label>
-          <input type="file" class="form-control @error('video') is-invalid @enderror" id="video" placeholder="Course video" name="video">
+          <input type="text" class="form-control @error('video') is-invalid @enderror" id="video" placeholder="Course video" name="video">
           @error('video')
             <span class="text-danger mt-2 d-block">{{ $message }}</span>
           @enderror

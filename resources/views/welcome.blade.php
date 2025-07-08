@@ -165,7 +165,7 @@
               <div class="icon">
                 <i class="bi bi-calendar2-event"></i>
               </div>
-              <a href="mentoring.blade.php" class="stretched-link">
+              <a href="/mentoring" class="stretched-link">
                 <h3>Mentoring</h3>
               </a>
               <p>Mentoring adalah tempat atau layanan kami untuk membantu proses belajar kamu agar kamu bisa bertanya secara langsung.</p>
@@ -182,7 +182,7 @@
               <div class="icon">
                 <i class="bi bi-easel"></i>
               </div>
-              <a href="materi.blade.php" class="stretched-link">
+              <a href="/materi" class="stretched-link">
                 <h3>Materi</h3>
               </a>
               <p>Disini kamu akan mendapatkan banyak informasi tentang gitar seperti chord dasar, cara strumming, teknik petikan, dan lainnya.</p>

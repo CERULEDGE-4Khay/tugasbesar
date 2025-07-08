@@ -32,7 +32,7 @@ class CourseController extends Controller
     {
         $request->validate([
             'name' => 'required|string|max:255',
-            'video' => 'nullable|file|mimetypes:video/mp4,video/webm,video/ogg|max:204800',
+            'video' => 'nullable',
             'description' => 'nullable|string',
             'content' => 'nullable|string',
         ]);
@@ -45,17 +45,23 @@ class CourseController extends Controller
             'level' => $request->level
         ]);
 
-        if($request->hasFile('video')) {
-            foreach($request->file('video') as $image) {
-                $path = $image->store('video');
+        Videos::create([
+            'title' => $course->name,
+            'courses_id' => $course->id,
+            'video_url' => $request->video
+        ]);
 
-                Videos::create([
-                    'title' => $course->name,
-                    'course_id' => $course->id,
-                    'video_url' => $path
-                ]);
-            }
-        }
+        // if($request->hasFile('video')) {
+        //     foreach($request->file('video') as $image) {
+        //         $path = $image->store('video');
+
+        //         Videos::create([
+        //             'title' => $course->name,
+        //             'course_id' => $course->id,
+        //             'video_url' => $path
+        //         ]);
+        //     }
+        // }
 
         return redirect()->route('course.index')->with('success', 'Course berhasil ditambahkan!');
     }

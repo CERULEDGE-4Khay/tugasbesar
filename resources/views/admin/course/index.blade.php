@@ -16,7 +16,7 @@
       <table class="table table-stripped">
         <thead>
           <tr>
-            <th>#</th>
+            <th>No</th>
             <th>Course Name</th>
             <th>Type</th>
             <th>Level</th>
@@ -49,7 +49,7 @@
                 <form action="{{ route('course.destroy', $course->id) }}" 
                   method="POST" 
                   class="border d-inline"
-                  onsubmit="return confirm('Apakah kamu yakin ingin mengapus course ini?');"
+                  onsubmit="return confirm('Apakah kamu yakin ingin menghapus course ini?');"
                 >
                   @csrf
                   @method('DELETE')

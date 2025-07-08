@@ -40,7 +40,8 @@ class LearningController extends Controller
     // Menampilkan detail kursus dan videonya
     public function courseDetail(Courses $courses)
     {
-        return view('courses', compact('courses'));
+        $videos = $courses->videos;
+        return view('courses', compact('courses', 'videos'));
     }
 
     // Tonton video

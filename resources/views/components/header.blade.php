@@ -2,7 +2,7 @@
   <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
     <a href="welcome" class="logo d-flex align-items-center me-auto">
-      <img src="img/pickitup-logo.png" alt="pickitup logo">
+      <img src="{{ asset('img/pickitup-logo.png')}}" alt="pickitup logo">
       <h1 class="sitename">PickItUp</h1>
     </a>
 
@@ -15,7 +15,7 @@
         @endauth
         <li class="dropdown"><a href="#"><span>Pilihan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">Materi Gitar</a></li>
+            <li><a href="/materi">Materi Gitar</a></li>
             {{-- <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
                 <li><a href="#">Deep Dropdown 1</a></li>

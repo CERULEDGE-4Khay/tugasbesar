@@ -17,6 +17,4 @@ class Courses extends Model
     public function progress(){
         return $this->hasMany(UserProgress::class);
     }
-
-
 }

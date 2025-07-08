@@ -29,30 +29,14 @@
               <div class="icon">
                 <i class="bi bi-book-half"></i>
               </div>
-              <a href="#" class="stretched-link">
-                <h3>QUIZ TEBAK CHORD</h3>
+              <a href="{{ route('show.quiz') }}" class="stretched-link">
+                <h3>DAFTAR QUIZ</h3>
               </a>
               <p>Di quiz ini kamu bisa mengukur berapa banyak Chord yg sudah kamu ketahui.</p>
             </div>
           </div>
         </div><!-- End Service Item -->
 
-        <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-          <div class="service-item">
-            <div class="img">
-              <img src="{{ asset('/img/guitar-photo.jpg')}}" class="img-fluid" alt="">
-            </div>
-            <div class="details position-relative">
-              <div class="icon">
-                <i class="bi bi-calendar2-event"></i>
-              </div>
-              <a href="mentoring.blade.php" class="stretched-link">
-                <h3>QUIZ PILIHAN GANDA</h3>
-              </a>
-              <p>Di quiz ini akan ada soal jawab tentang gitar dan kamu bisa tau seberapa jauh pengetahuan kamu.</p>
-            </div>
-          </div>
-        </div><!-- End Service Item -->
 
         <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
           <div class="service-item">

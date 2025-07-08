@@ -9,8 +9,7 @@
         .progress { background-color: #3b82f6; height: 20px; }
 </style>
     <div class="container my-5"> {{-- Bootstrap container for proper spacing and centering --}}
-        <h2 class="text-center mb-4 fw-bold bi-bell">Daftar Kursus Kamu</h2>
-
+        <h2 class="text-center mb-4 fw-bold bi-bell" style="margin-top: 100px">Daftar Kursus Kamu</h2>
         <div class="row justify-content-center"> {{-- Centering the content column --}}
             <div class="col-lg-8"> {{-- Limiting width for better readability on larger screens --}}
                 <a href="" class="d-flex justify-content-center mb-5">
@@ -19,8 +18,8 @@
                 @foreach ($courses as $course)
                     <div class="card mb-3 mt-3 shadow-sm"> {{-- Bootstrap card for each course, with bottom margin and subtle shadow --}}
                         <div class="card-body d-flex align-items-center justify-content-between"> {{-- Flexbox for content and button alignment --}}
-                            <div class="bi bi-1-circle">
-                                <h5 class="card-title fw-semibold text-dark">{{ $course->title }}</h5>
+                            <div>
+                                <h5 class="card-title fw-semibold">{{ $course->name }}</h5>
                                 <p class="card-text text-muted">{{ $course->description }}</p>
                                 <p class="small text-primary mt-2">Level: <span class="fw-medium">{{ ucfirst($course->level) }}</span></p>
                             </div>
@@ -44,6 +43,8 @@
                         Belum ada kursus yang tersedia saat ini.
                     </div>
                 @endif
+                <a href="/latihaninteraktif" class="btn btn-primary bi-arrow-left-square"> 
+                </a>
             </div>
         </div>
     </div>

@@ -34,9 +34,9 @@
         <h4>Pelayanan Kami</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Rekomendasi Gitar</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Mentoring</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Materi</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="quiz">Latihan Interaktif</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="/mentoring">Mentoring</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="/materi">Materi</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="/latihaninteraktif">Latihan Interaktif</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="#">Berita Gitar</a></li>
         </ul>
       </div>

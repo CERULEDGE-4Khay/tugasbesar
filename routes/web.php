@@ -5,6 +5,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\LearningController;
+use App\Http\Controllers\MissionController;
+use App\Http\Controllers\QuizController;
 use App\Http\Controllers\UserProgressController;
 use App\Models\Courses;
 
@@ -22,6 +24,7 @@ Route::get('/register', function () {
     return view('register');
 });
 
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
@@ -30,6 +33,9 @@ Route::prefix('dashboard/admin')->group(function() {
     Route::get('/', function() {
         return view('admin.index');
     })->name('dashboard.admin');
+    
+    route::resource('mission', MissionController::class);
+
 
     Route::resource('/course', CourseController::class)->parameters([
         'course' => 'courses'
@@ -46,6 +52,19 @@ Route::get('/about', function () {
 Route::get('/courses', function () {
     return view('courses');
 });
+// Route::get('/create', function () {
+//     return view('quiz.create');
+// });
+// Tampilan detail quiz + form jawaban
+Route::get('mission/{id}/detail', [QuizController::class, 'showDetail'])->name('user.quiz.show');
+
+// Submit jawaban quiz
+Route::post('quiz/{id}/submit', [QuizController::class, 'submitQuiz'])->name('user.quiz.submit');
+
+Route::resource('quiz', controller: QuizController::class);
+Route::get( 'show/quiz', [QuizController::class, 'showAll'])->name('show.quiz');
+
+
 Route::get('/index', function(){
     $courses = Courses::all();
     return view('index', compact('courses'));
@@ -53,6 +72,12 @@ Route::get('/index', function(){
 Route::get('/latihaninteraktif', function () {
     return view('latihaninteraktif');
 })->middleware('auth')->name('latihaninteraktif');
+Route::get('/materi', function () {
+    return view('materi');
+})->middleware('auth')->name('materi');
+Route::get('/mentoring', function () {
+    return view('mentoring');
+})->middleware('auth')->name('mentoring');
 
 Route::post('/progress/mark/{video}', [UserProgressController::class, 'markVideoAsCompleted'])
     ->middleware('auth')
