@@ -106,9 +106,50 @@ class QuizController extends Controller
         return redirect()->route('quiz-detail', $quiz->id)->with('result', $isCorrect ? 'Jawaban kamu benar! 🎉' : 'Jawaban kamu salah 😢');
     }
 
-        /**
-     * Display the specified resource.
-     */
+public function submitAll(Request $request)
+{
+    $user = auth()->user();
+    $answers = $request->input('answers');
+
+    $benar = 0; 
+    $total = count($answers); // jumlah soal yang dijawab
+
+    foreach ($answers as $quizId => $answerId) {
+        $quiz = Quiz::with('quizAnswers')->find($quizId);
+        $selectedAnswer = $quiz->quizAnswers->where('id', $answerId)->first();
+
+        $isCorrect = $selectedAnswer && $selectedAnswer->is_right;
+
+        if ($isCorrect) {
+            $benar++; // ✅ tambah skor jika benar
+        }
+        // Hindari submit ganda
+        $alreadySubmitted = QuizSubmission::where('user_id', $user->id)
+                            ->where('quiz_id', $quizId)
+                            ->exists();
+
+        if (!$alreadySubmitted) {
+            QuizSubmission::create([
+                'user_id'         => $user->id,
+                'quiz_id'         => $quizId,
+                'quiz_answer_id'  => $answerId,
+                'score'           => $isCorrect ? 1 : 0 // ✅ simpan nilai per soal
+            ]);
+        }
+
+    }
+            $score = round(($benar / $total) * 100); // nilai persen
+
+            return view('hasilquiz', [
+            'score' => $score,
+            'total' => $total,
+            'benar' => $benar,
+        ]);
+
+    // return redirect()->route('hasil.quiz')->with('success', 'Jawabanmu berhasil dikirim!');
+}
+
+
     public function show(Quiz $quiz)
     {
         return view('admin.quiz.show', compact('quiz'));

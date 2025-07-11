@@ -1,4 +1,4 @@
-@extends('layouts.guest') {{-- gunakan layout umum untuk user --}}
+@extends('layouts.guest')
 
 @section('title', 'Semua Quiz')
 
@@ -18,7 +18,7 @@
     </div><!-- End Page Title -->
     
     <div class="container">
-        <form action="" method="POST">
+        <form action="{{ route('user.quiz.submit.all') }}" method="POST">
             @csrf
         
             @foreach($quizzes as $quiz)
@@ -47,6 +47,46 @@
             @endforeach
         
             <button type="submit" class="btn btn-success mb-4">Kirim Semua Jawaban</button>
+            
         </form>
+            @if(session('success'))
+            <div id="popup-alert" class="custom-popup alert alert-success">
+                {{ session('success') }}
+            </div>
+            @endif
+            
+            @if(session('error'))
+            <div id="popup-alert" class="custom-popup alert alert-danger">
+                {{ session('error') }}
+            </div>
+            @endif
+            
+            <style>
+            .custom-popup {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 9999;
+                padding: 20px 30px;
+                font-size: 18px;
+                border-radius: 8px;
+                text-align: center;
+                animation: fadeIn 0.3s ease-in-out;
+            }
+            
+            @keyframes fadeIn {
+                from { opacity: 0; transform: translate(-50%, -60%); }
+                to { opacity: 1; transform: translate(-50%, -50%); }
+            }
+            </style>
+            
+            <script>
+            // Auto-hide popup after 3.5 seconds
+            setTimeout(() => {
+                const popup = document.getElementById('popup-alert');
+                if (popup) popup.style.display = 'none';
+            }, 3500);
+            </script>
     </div>
 @endsection

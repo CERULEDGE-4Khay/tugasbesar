@@ -503,7 +503,7 @@
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.</span>
+                <span>Website ini sangat membantu untuk orang yg ingin belajar gitar dengan mudah.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
@@ -512,14 +512,14 @@
           <div class="swiper-slide">
             <div class="testimonial-item">
               <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-              <h3>Jena Karlis</h3>
-              <h4>Mentor</h4>
+              <h3>Herman</h3>
+              <h4>Pengunjung</h4>
               <div class="stars">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.</span>
+                <span>aku sih melihat websitenya saja udah sangat menarik karna di desain secara modern dan interaktif.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
@@ -528,14 +528,14 @@
           <div class="swiper-slide">
             <div class="testimonial-item">
               <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-              <h3>Matt Brandon</h3>
-              <h4>Mentor</h4>
+              <h3>Najmi</h3>
+              <h4>Peserta/Murid</h4>
               <div class="stars">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.</span>
+                <span>saya udah coba aplikasi atau website ini dan menurut saya ini bagus bisa memberikan saya pengajaran yg jelas dan sistematis.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
@@ -544,14 +544,14 @@
           <div class="swiper-slide">
             <div class="testimonial-item">
               <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-              <h3>John Larson</h3>
-              <h4>Client</h4>
+              <h3>Rizky H</h3>
+              <h4>Admin</h4>
               <div class="stars">
                 <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
               </div>
               <p>
                 <i class="bi bi-quote quote-icon-left"></i>
-                <span>Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.</span>
+                <span>Website ini dirancang untuk anda para pemula yg ingin belajar gitar mulai dari nol sampai jago atau setidaknya sampai level yg kalian inginkan.</span>
                 <i class="bi bi-quote quote-icon-right"></i>
               </p>
             </div>
@@ -579,10 +579,10 @@
       <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
 
         <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">Guitar Classic</li>
-          <li data-filter=".filter-product">Guitar Accoustic</li>
-          <li data-filter=".filter-branding">Guitar Electric</li>
+          <li data-filter="*" class="filter-active">Semua</li>
+          <li data-filter=".filter-app">Gitar Klasik</li>
+          <li data-filter=".filter-product">Gitar Akustik</li>
+          <li data-filter=".filter-branding">Gitar Elektrik</li>
           <li data-filter=".filter-books">Bass</li>
         </ul><!-- End Portfolio Filters -->
 
@@ -592,9 +592,9 @@
             <div class="portfolio-content h-100">
               <img src="{{ asset('/img/guitar-classic-foto.jpg')}}" class="img-fluid" alt="gitar klasik 1">
               <div class="portfolio-info">
-                <h4>Guitar Classic 1</h4>
+                <h4>Gitar Klasik 1</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/guitar-classic-foto.jpg')}}" title="Guitar Classic 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/guitar-classic-foto.jpg')}}" title="Gitar Klasik 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -604,9 +604,9 @@
             <div class="portfolio-content h-100">
               <img src="{{ asset('/img/photo-guitar1.jpg')}}" class="img-fluid" alt="gitar akustik 1">
               <div class="portfolio-info">
-                <h4>Guitar Accoustic 1</h4>
+                <h4>Gitar Akustik 1</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/photo-guitar1.jpg')}}" title="Guitar Accoustic 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/photo-guitar1.jpg')}}" title="Gitar Akustik 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -616,9 +616,9 @@
             <div class="portfolio-content h-100">
               <img src="{{ asset('/img/guitar-electric-foto.jpg')}}" class="img-fluid" alt="gitar elektrik">
               <div class="portfolio-info">
-                <h4>Guitar Electric 1</h4>
+                <h4>Gitar Elekrik 1</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/guitar-electric-foto.jpg')}}" title="Guitar Electric 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/guitar-electric-foto.jpg')}}" title="Gitar Elektrik 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -626,7 +626,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/gitar-bass1.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/gitar-bass1.jpg')}}" class="img-fluid" alt="Bass 1">
               <div class="portfolio-info">
                 <h4>Bass 1</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -638,11 +638,11 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/guitar-classic-foto2.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/guitar-classic-foto2.jpg')}}" class="img-fluid" alt="Gitar Klasik 2">
               <div class="portfolio-info">
-                <h4>Guitar Classic 2</h4>
+                <h4>Gitar Klasik 2</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/guitar-classic-foto2.jpg')}}" title="Guitar Classic 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/guitar-classic-foto2.jpg')}}" title="Gitar Klasik 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -652,9 +652,9 @@
             <div class="portfolio-content h-100">
               <img src="{{ asset('/img/guitar-accoustic-foto.jpg')}}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Guitar Accoustic 2</h4>
+                <h4>Gitar Akustik 2</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/guitar-accoustic-foto.jpg')}}" title="Guitar Accoustic 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/guitar-accoustic-foto.jpg')}}" title="Gitar Akustik 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -662,11 +662,11 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/guitar-electric-foto1.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/guitar-electric-foto1.jpg')}}" class="img-fluid" alt="Guitar Elektrik 2">
               <div class="portfolio-info">
-                <h4>Guitar Electric 2</h4>
+                <h4>Gitar Elektrik 2</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/guitar-electric-foto1.jpg')}}" title="Guitar Electric 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/guitar-electric-foto1.jpg')}}" title="Gitar Elektrik 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -674,7 +674,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/gitar-bass2.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/gitar-bass2.jpg')}}" class="img-fluid" alt="Bass 2">
               <div class="portfolio-info">
                 <h4>Bass 2</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
@@ -686,11 +686,11 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/guitar-classic-foto1.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/guitar-classic-foto1.jpg')}}" class="img-fluid" alt="Gitar Klasik 3">
               <div class="portfolio-info">
-                <h4>Guitar Classic 3</h4>
+                <h4>Gitar Klasik 3</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/guitar-classic-foto1.jpg')}}" title="Guitar Classic 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/guitar-classic-foto1.jpg')}}" title="Gitar Klasik 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -698,11 +698,11 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/acoustic-guitar.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/acoustic-guitar.jpg')}}" class="img-fluid" alt="Gitar Akustik 3">
               <div class="portfolio-info">
-                <h4>Guitar Accoustic 3</h4>
+                <h4>Gitar Akustikc 3</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/acoustic-guitar.jpg')}}" title="Guitar Accoustic 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/acoustic-guitar.jpg')}}" title="Gitar Akustik 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -710,11 +710,11 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/guitar-electric-foto2.jpg')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/guitar-electric-foto2.jpg')}}" class="img-fluid" alt="Gitar Elektrik 3">
               <div class="portfolio-info">
-                <h4>Guitar Electric 3</h4>
+                <h4>Gitar Elektrik 3</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>
-                <a href="{{ asset('/img/guitar-electric-foto2.jpg')}}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="{{ asset('/img/guitar-electric-foto2.jpg')}}" title="Gitar Elektrik 3" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div>
@@ -722,7 +722,7 @@
 
           <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
             <div class="portfolio-content h-100">
-              <img src="{{ asset('/img/gitar-bass3.png')}}" class="img-fluid" alt="">
+              <img src="{{ asset('/img/gitar-bass3.png')}}" class="img-fluid" alt="Bass 3">
               <div class="portfolio-info">
                 <h4>Bass 3</h4>
                 <p>Lorem ipsum, dolor sit amet consectetur</p>

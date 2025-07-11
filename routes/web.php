@@ -52,6 +52,13 @@ Route::get('/about', function () {
 Route::get('/courses', function () {
     return view('courses');
 });
+Route::get('/auth/passwords/confirm', function () {
+    return view('auth/passwords/confirm');
+});
+Route::get('/quiz/hasil', function () {
+    return view('hasilquiz');
+})->name('hasil.quiz');
+
 // Route::get('/create', function () {
 //     return view('quiz.create');
 // });
@@ -60,6 +67,9 @@ Route::get('mission/{id}/detail', [QuizController::class, 'showDetail'])->name('
 
 // Submit jawaban quiz
 Route::post('quiz/{id}/submit', [QuizController::class, 'submitQuiz'])->name('user.quiz.submit');
+// Web.php
+Route::post('/quiz/submit-all', [QuizController::class, 'submitAll'])->name('user.quiz.submit.all');
+
 
 Route::resource('quiz', controller: QuizController::class);
 Route::get( 'show/quiz', [QuizController::class, 'showAll'])->name('show.quiz');

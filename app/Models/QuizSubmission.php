@@ -8,4 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class QuizSubmission extends Model
 {
     use HasFactory;
+     protected $fillable = [
+        'user_id',
+        'quiz_id',
+        'quiz_answer_id',
+        'score',
+    ];
+
+     public function quiz()
+    {
+        return $this->belongsTo(Quiz::class);
+    }
+
+    // ✅ Relasi ke Jawaban
+    public function answer()
+    {
+        return $this->belongsTo(QuizAnswer::class, 'quiz_answer_id');
+    }
 }

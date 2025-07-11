@@ -128,13 +128,6 @@
                     </a>
                 </li>
 
-                <li class="sidebar-item">
-                    <a href="application-gallery.html" class="sidebar-link">
-                        <i class="bi bi-image-fill"></i>
-                        <span>Koleksi Video Tutor</span>
-                    </a>
-                </li>
-
                 <li class="sidebar-item has-sub">
                     <a href="#" class="sidebar-link">
                         <i class="bi bi-person-circle"></i>
@@ -150,10 +143,10 @@
                             <a href="account-security.html" class="submenu-link">Keamanan</a>
                         </li>
                         <li class="submenu-item">
-                            <a href="auth-forgot-password.html" class="submenu-link">Forgot Password</a>
+                            <a href="/auth/passwords/confirm" class="submenu-link">Reset Password</a>
                         </li>
                         <li class="submenu-item">
-                            <a href="auth-forgot-password.html" class="submenu-link">Logout</a>
+                            <a href="#" class="submenu-link">Logout</a>
                         </li>
                     </ul>
                 </li>
