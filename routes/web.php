@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController;
@@ -31,7 +32,10 @@ Route::get('/dashboard', function () {
 
 Route::prefix('dashboard/admin')->group(function() {
     Route::get('/', function() {
-        return view('admin.index');
+        $userCount = App\Models\User::count();
+        $quizCount = App\Models\Quiz::count();
+        $missionCount = App\Models\Mission::count();
+        return view('admin.index', compact('userCount', 'quizCount', 'missionCount'));
     })->name('dashboard.admin');
     
     route::resource('mission', MissionController::class);
@@ -42,6 +46,11 @@ Route::prefix('dashboard/admin')->group(function() {
     ]);
 })->middleware(['auth']);
 
+Route::post('/update-progress', [UserProgressController::class, 'update'])
+    ->middleware('auth') // karena kamu pakai auth biasa
+    ->name('progress.update');
+
+// Route::get('/test-achievement', [HomeController::class, 'testAchievement'])->middleware('auth');
 
 Route::get('/contact', function () {
     return view('contact');

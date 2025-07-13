@@ -27,28 +27,42 @@
                 <p class="small text-primary mb-0">Level: <span class="fw-medium">{{ ucfirst($courses->level) }}</span></p> {{-- Bootstrap small text, primary color --}}
             </div>
         </div>
-        <div class="justify-content-space-around mt-5">
-            <a href="/index" class="btn btn-primary"><i class="bi bi-arrow-left-square-fill">Kembali Ke Kursus</i></a>
-        </div>
-        <div class="d-flex justify-content-end">
-            <button onclick="markTextAsRead()" class="btn btn-primary">Selesai</button>
+        <div class="d-flex justify-content-between align-items-center mt-5">
+            <a href="/index" class="btn btn-primary">
+            <i class="bi bi-arrow-left-square-fill me-2"></i> Kembali Ke Kursus
+            </a>
+            <button onclick="markTextAsRead()" class="btn btn-primary"> Selesai
+            </button>
         </div>
     </div>
     <script>
-        function markTextAsRead() {
-            fetch('/api/update-progress', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-                },
-                body: JSON.stringify({
-                    video_id: null,
-                    course_id: {{ $courses->id }},
-                    progress_percentage: 100,
-                    is_completed: true
-                })
-            });
+            function markTextAsRead() {
+        fetch('/update-progress', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+            },
+            body: JSON.stringify({
+                video_id: null,
+                course_id: {{ $courses->id }},
+                progress_percentage: 100,
+                is_completed: true
+            })
+        })
+        .then(response => {
+            if (response.ok) {
+                alert('Progres berhasil diperbarui. Selamat! Kamu telah menyelesaikan course ini.');
+                window.location.href = '/index'; // Redirect ke halaman kursus
+            } else {
+                alert('Terjadi kesalahan saat memperbarui progres.');
+            }
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert('Gagal mengirim data. Periksa koneksi atau coba lagi.');
+        });
         }
+
     </script>
 @endsection

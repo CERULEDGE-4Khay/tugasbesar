@@ -18,6 +18,8 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::middleware('auth:sanctum')->post('/update-progress', [UserProgressController::class, 'update']);
+
 // routes/api.php
 Route::post('/update-progress', [UserProgressController::class, 'update']);
 

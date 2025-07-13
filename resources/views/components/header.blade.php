@@ -26,7 +26,7 @@
               </ul> --}}
             </li>
             <li><a href="#">Katalog Chord Dasar</a></li>
-            <li><a href="#">Video Tutorial</a></li>
+            <li><a href="#">Mentoring</a></li>
             <li><a href="/latihaninteraktif">Latihan Interaktif</a></li>
           </ul>
         </li>

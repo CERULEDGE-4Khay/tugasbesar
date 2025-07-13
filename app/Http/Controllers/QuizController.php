@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Achievement;
 use App\Models\Mission;
 use App\Models\Quiz;
 use App\Models\QuizAnswer;
@@ -112,17 +113,21 @@ public function submitAll(Request $request)
     $answers = $request->input('answers');
 
     $benar = 0; 
-    $total = count($answers); // jumlah soal yang dijawab
+    $total = count($answers);
+
+    $quizDetails = []; // ← untuk menampung detail soal dan jawaban
 
     foreach ($answers as $quizId => $answerId) {
         $quiz = Quiz::with('quizAnswers')->find($quizId);
         $selectedAnswer = $quiz->quizAnswers->where('id', $answerId)->first();
+        $correctAnswer = $quiz->quizAnswers->where('is_right', 1)->first();
 
         $isCorrect = $selectedAnswer && $selectedAnswer->is_right;
 
         if ($isCorrect) {
-            $benar++; // ✅ tambah skor jika benar
+            $benar++;
         }
+
         // Hindari submit ganda
         $alreadySubmitted = QuizSubmission::where('user_id', $user->id)
                             ->where('quiz_id', $quizId)
@@ -133,20 +138,27 @@ public function submitAll(Request $request)
                 'user_id'         => $user->id,
                 'quiz_id'         => $quizId,
                 'quiz_answer_id'  => $answerId,
-                'score'           => $isCorrect ? 1 : 0 // ✅ simpan nilai per soal
+                'score'           => $isCorrect ? 1 : 0
             ]);
         }
 
+        // Simpan detail soal & jawaban
+        $quizDetails[] = [
+            'question' => $quiz->question,
+            'selected_answer' => $selectedAnswer?->answer ?? 'Tidak dijawab',
+            'correct_answer'  => $correctAnswer?->answer ?? 'Tidak tersedia',
+            'is_correct' => $isCorrect,
+        ];
     }
-            $score = round(($benar / $total) * 100); // nilai persen
 
-            return view('hasilquiz', [
-            'score' => $score,
-            'total' => $total,
-            'benar' => $benar,
-        ]);
+    $score = round(($benar / $total) * 100);
 
-    // return redirect()->route('hasil.quiz')->with('success', 'Jawabanmu berhasil dikirim!');
+    return view('hasilquiz', [
+        'score' => $score,
+        'total' => $total,
+        'benar' => $benar,
+        'quizDetails' => $quizDetails // ← kirim ke view
+    ]);
 }
 
 

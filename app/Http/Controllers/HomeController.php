@@ -25,4 +25,20 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+//     public function testAchievement()
+// {
+//     $user = auth()->user();
+
+//     // Tes tampilkan semua achievement user
+//     foreach ($user->achievements as $achievement) {
+//         dump($achievement->title);
+//     }
+
+//     // Tambahkan 1 achievement ke user
+//     $achievement = \App\Models\Achievement::first(); // Ambil salah satu achievement
+//     $user->achievements()->syncWithoutDetaching([$achievement->id]);
+
+//     return 'Berhasil assign achievement!';
+// }
 }

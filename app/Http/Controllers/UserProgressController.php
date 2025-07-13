@@ -4,8 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\UserProgress;
 use App\Models\Videos;
-use App\Models\Achievements;
+use App\Models\Achievement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class UserProgressController extends Controller
 {
@@ -49,11 +50,12 @@ class UserProgressController extends Controller
     public function update(Request $request)
     {
         $userId = auth()->id(); // pastikan pakai auth middleware
+        Log::info('Update progress request:', $request->all());
         $progress = UserProgress::updateOrCreate(
             [
                 'user_id' => $userId,
-                'courses_id' => $request->course_id,
-                'videos_id' => $request->video_id,
+                'course_id' => $request->course_id,
+                'video_id' => $request->video_id,
             ],
             [
                 'progress_percentage' => $request->progress_percentage,
@@ -66,7 +68,7 @@ class UserProgressController extends Controller
 
     public function calculateCourseProgress($userId, $courseId)
     {
-        $totalVideos = Videos::where('courses_id', $courseId)->count();
+        $totalVideos = Videos::where('course_id', $courseId)->count();
         $completed = UserProgress::where('user_id', $userId)
             ->where('course_id', $courseId)
             ->where('is_completed', true)

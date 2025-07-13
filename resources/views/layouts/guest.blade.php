@@ -6,6 +6,8 @@
         <title>PickItUp</title>
         <meta name="description" content="">
         <meta name="keywords" content="">
+        <meta name="csrf-token" content="{{ csrf_token() }}">
+
 
         <!-- Favicons -->
 

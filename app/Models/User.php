@@ -45,8 +45,9 @@ class User extends Authenticatable
     public function progress(){
     return $this->hasMany(UserProgress::class);
     }
-    public function achievements(){
-    return $this->hasMany(\App\Models\Achievements::class);
+    public function achievements()
+    {
+    return $this->belongsToMany(Achievement::class, 'user_achievements');
     }
 
 }

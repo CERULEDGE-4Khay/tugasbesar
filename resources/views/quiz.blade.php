@@ -3,13 +3,13 @@
 @section('title', 'Semua Quiz')
 
 @section('content')
-<div class="container py-4">
-  <h2 class="mb-4 mt-5">Semua Mission</h2>
+<div class="container py-5 mt-4 mb-4 bg-dark">
+  <h2 class="mb-4 mt-5 text-center text-white">Semua Level Quiz</h2>
 
   <div class="row">
         @foreach ($missions as $mission)
             <div class="col-md-4">
-                <div class="card">
+                <div class="card mb-5 shadow p-3 mb-5 bg-body-tertiary rounded shadow">
                     <div class="card-body">
                         <h2>{{ $mission->mission_title }}</h2>
                         <p class="text-muted">{{ $mission->description }}</p>

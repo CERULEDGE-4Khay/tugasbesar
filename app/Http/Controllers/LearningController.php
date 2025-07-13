@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Auth;
 use App\Models\Courses;
 use App\Models\Videos;
 use App\Models\UserProgress;
-use App\Models\Achievements;
+use App\Models\Achievement;
 
 class LearningController extends Controller
 {
@@ -25,7 +25,7 @@ class LearningController extends Controller
         $courses = Courses::all();
 
         // Ambil pencapaian
-        $achievements = Achievements::where('user_id', $user->id)->get();
+        $achievements = Achievement::where('user_id', $user->id)->get();
 
         return view('dashboard', compact('courses', 'user', 'progress', 'latestVideos', 'achievements'));
     }
@@ -67,7 +67,7 @@ class LearningController extends Controller
 
         // Tambahkan pencapaian jika selesai
         if ($progress->is_completed) {
-            Achievements::firstOrCreate([
+            Achievement::firstOrCreate([
                 'user_id' => Auth::id(),
                 'achievement_name' => 'Selesaikan Kursus: ' . $progress->course->title,
             ]);

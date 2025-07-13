@@ -18,7 +18,6 @@
         <nav class="breadcrumbs">
           <ol>
             <li><a href="/">Home</a></li>
-            <li><a href="#">Achievement Saya</a></li>
           </ol>
         </nav>
       </div>
@@ -38,7 +37,32 @@
         </ul>
     </div>
 
-    <div class="card">
+    <div class="card p-4 shadow-sm border border-gray-200 rounded">
+        <h3 class="text-xl font-bold mb-4 text-center">🏆 Achievement Saya</h3>
+
+        @if(auth()->user()->achievements->count())
+            <ul class="space-y-3">
+                @foreach(auth()->user()->achievements as $achievement)
+                    <li class="bg-white border-l-4 border-green-500 p-4 shadow-sm rounded-md">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <div class="text-lg font-semibold text-green-700">{{ $achievement->title }}</div>
+                                <div class="text-sm text-gray-700">{{ $achievement->description }}</div>
+                            </div>
+                            @if ($achievement->file_path)
+                                <a href="{{ asset('storage/' . $achievement->file_path) }}" target="_blank" class="text-blue-600 hover:underline text-sm">📄 Lihat Sertifikat</a>
+                            @endif
+                        </div>
+                    </li>
+                @endforeach
+            </ul>
+        @else
+            <div class="text-center text-gray-600 italic">
+                Belum ada achievement yang diraih.<br>Yuk, selesaikan kursus dan quiz untuk mendapatkannya!
+            </div>
+        @endif
+    </div>
+    {{-- <div class="card">
           <h3 class="text-xl font-bold mb-2">Achievement Saya</h3>
 
     @if(auth()->user()->achievements->count())
@@ -60,5 +84,6 @@
         <p class="text-gray-600 italic">Belum ada achievement yang diraih. Yuk selesaikan course!</p>
     @endif
 
-    </div>
+    </div> --}}
+
 @endsection

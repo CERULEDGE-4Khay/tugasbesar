@@ -146,7 +146,10 @@
                             <a href="/auth/passwords/confirm" class="submenu-link">Reset Password</a>
                         </li>
                         <li class="submenu-item">
-                            <a href="#" class="submenu-link">Logout</a>
+                            <a href="#" type="button" class="submenu-link" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Logout
+                            </a>
+                            
                         </li>
                     </ul>
                 </li>
@@ -160,3 +163,24 @@
         </div>
     </div>
     </div>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Logout</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Apakah anda yakin?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <form action="{{ route('logout') }}" method="post" class="submenu-link">
+            @csrf
+            <button class="btn btn-danger" type="submit">Logout</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

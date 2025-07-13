@@ -7,7 +7,7 @@
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(/img/guitar1.jpg);">
       <div class="container position-relative">
         <h1>QUIZ PickItUp</h1>
-        <p>Selamat Datang di Quiz, sudah siap?
+        <p>Selamat Datang di Quiz, silahkan isi jawaban yang sesuai tapi sesuai pengetahuanmu ya!
         </p>
         <nav class="breadcrumbs">
           <ol>
@@ -22,7 +22,7 @@
             @csrf
         
             @foreach($quizzes as $quiz)
-                <div class="card mb-4 mt-5 ">
+                <div class="card mb-4 mt-5 shadow">
                     <div class="card-body">
                         <h5 class="mb-2">Soal {{ $loop->iteration }}: {{ $quiz->quiz_title }}</h5>
                         <p class="text-muted">{{ $quiz->quiz_description }}</p>
@@ -45,8 +45,10 @@
                     </div>
                 </div>
             @endforeach
-        
+            <div class="d-grid gap-2 d-flex justify-content-between">
+            <a href="{{ route('show.quiz') }}" class="btn btn-primary mb-4 justify-content-start"><i class="bi bi-arrow-left-square-fill">  Kembali</i></a>
             <button type="submit" class="btn btn-success mb-4">Kirim Semua Jawaban</button>
+            </div>
             
         </form>
             @if(session('success'))

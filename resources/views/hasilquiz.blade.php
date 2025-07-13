@@ -15,7 +15,7 @@
     </div>
   </div>
 
-  <div class="container mt-5">
+  <div class="container mt-5 mb-5">
     <div class="card shadow">
       <div class="card-body text-center">
         <h2 class="mb-3">Nilai Kamu: <span class="text-primary">{{ $score }}%</span></h2>
@@ -34,4 +34,30 @@
       </div>
     </div>
   </div>
+
+  <div class="container">
+      <h3 class="mt-5 mb-4">Review Jawaban Kamu:</h3>
+    @foreach ($quizDetails as $index => $detail)
+      <div class="card mb-3 text-start shadow">
+        <div class="card-body">
+          <h5><strong>Soal {{ $index + 1 }}:</strong> {{ $detail['question'] }}</h5>
+    
+          <p>
+            Jawaban Kamu:
+            <span class="{{ $detail['is_correct'] ? 'text-success' : 'text-danger' }}">
+              {{ $detail['selected_answer'] }}
+              {!! $detail['is_correct'] ? '✅' : '❌' !!}
+            </span>
+          </p>
+    
+          @if (!$detail['is_correct'])
+            <p>Jawaban Benar:
+              <span class="text-success">{{ $detail['correct_answer'] }} ✅</span>
+            </p>
+          @endif
+        </div>
+      </div>
+    @endforeach
+  </div>
+
 @endsection

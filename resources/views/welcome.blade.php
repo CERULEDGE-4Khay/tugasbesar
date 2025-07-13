@@ -11,7 +11,7 @@
 
     <div class="container d-flex flex-column align-items-center">
       <h2 data-aos="fade-up" data-aos-delay="100">LEARN. PRACTICE. PRODUCE.</h2>
-      <p data-aos="fade-up" data-aos-delay="200">Tempat belajar gitar mulai dari dasar sampai <span class="text-danger">JAGO</span></p>
+      <p data-aos="fade-up" data-aos-delay="200">Tempat belajar gitar mulai dari dasar sampai <span class="text-primary">JAGO</span></p>
       <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
         <a href="/login" class="btn btn-lg btn-success">Mulai</a>
         <a href="https://youtu.be/Yw74sDWPH7U?si=EPYZwD2HyA40g07z" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Tonton Video</span></a>
@@ -82,10 +82,10 @@
 
         <div class="col-lg-3 col-md-6">
           <div class="stats-item d-flex align-items-center w-100 h-100">
-            <i class="bi bi-emoji-smile text-primary flex-shrink-0"></i>
+            <i class="bi bi-people text-primary flex-shrink-0"></i>
             <div>
-              <span data-purecounter-start="0" data-purecounter-end="112" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Happy Clients</p>
+              <span data-purecounter-start="0" data-purecounter-end="1005" data-purecounter-duration="1" class="purecounter"></span>
+              <p>Jumlah Pengguna</p>
             </div>
           </div>
         </div><!-- End Stats Item -->
@@ -94,7 +94,7 @@
           <div class="stats-item d-flex align-items-center w-100 h-100">
             <i class="bi bi-journal-richtext text-primary flex-shrink-0"></i>
             <div>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+              <span data-purecounter-start="0" data-purecounter-end="205" data-purecounter-duration="1" class="purecounter"></span>
               <p>Materi</p>
             </div>
           </div>
@@ -102,20 +102,20 @@
 
         <div class="col-lg-3 col-md-6">
           <div class="stats-item d-flex align-items-center w-100 h-100">
-            <i class="bi bi-headset text-primary flex-shrink-0"></i>
+            <i class="bi bi-journal-check text-primary flex-shrink-0"></i>
             <div>
               <span data-purecounter-start="0" data-purecounter-end="10" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Genre</p>
+              <p>Jumlah Quiz</p>
             </div>
           </div>
         </div><!-- End Stats Item -->
 
         <div class="col-lg-3 col-md-6">
           <div class="stats-item d-flex align-items-center w-100 h-100">
-            <i class="bi bi-people text-primary flex-shrink-0"></i>
+            <i class="bi bi-file-earmark-medical-fill text-primary flex-shrink-0"></i>
             <div>
               <span data-purecounter-start="0" data-purecounter-end="5" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Mentor</p>
+              <p>Jumlah Kursus</p>
             </div>
           </div>
         </div><!-- End Stats Item -->
