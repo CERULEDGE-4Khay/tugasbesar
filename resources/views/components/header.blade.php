@@ -1,7 +1,7 @@
 <header id="header" class="header d-flex align-items-center fixed-top">
   <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-    <a href="welcome" class="logo d-flex align-items-center me-auto">
+    <a href="/" class="logo d-flex align-items-center me-auto">
       <img src="{{ asset('img/pickitup-logo.png')}}" alt="pickitup logo">
       <h1 class="sitename">PickItUp</h1>
     </a>
@@ -26,7 +26,7 @@
               </ul> --}}
             </li>
             <li><a href="#">Katalog Chord Dasar</a></li>
-            <li><a href="#">Mentoring</a></li>
+            <li><a href="/mentoring">Mentoring</a></li>
             <li><a href="/latihaninteraktif">Latihan Interaktif</a></li>
           </ul>
         </li>

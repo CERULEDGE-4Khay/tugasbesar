@@ -4,8 +4,10 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\ChatController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\LearningController;
+use App\Http\Controllers\MentoringController;
 use App\Http\Controllers\MissionController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\UserProgressController;
@@ -94,9 +96,16 @@ Route::get('/latihaninteraktif', function () {
 Route::get('/materi', function () {
     return view('materi');
 })->middleware('auth')->name('materi');
-Route::get('/mentoring', function () {
-    return view('mentoring');
-})->middleware('auth')->name('mentoring');
+
+Route::middleware(['auth'])->group(function () {
+    Route::get('/mentoring', [MentoringController::class, 'index'])->name('mentoring.index');
+    Route::get('/mentoring/{mentor}/schedule', [MentoringController::class, 'scheduleForm'])->name('mentoring.schedule');
+    Route::post('/mentoring/{mentor}/schedule', [MentoringController::class, 'storeSchedule'])->name('mentoring.storeSchedule');
+
+    Route::get('/chat/{mentor}', [ChatController::class, 'index'])->name('chat.index');
+    Route::post('/chat/send', [ChatController::class, 'send'])->name('chat.send');
+});
+
 
 Route::post('/progress/mark/{video}', [UserProgressController::class, 'markVideoAsCompleted'])
     ->middleware('auth')
