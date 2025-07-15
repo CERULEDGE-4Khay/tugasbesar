@@ -122,7 +122,7 @@
                 <li class="sidebar-title">Pages</li>
 
                 <li class="sidebar-item">
-                    <a href="application-email.html" class="sidebar-link">
+                    <a href="{{ route('admin.messages')}}" class="sidebar-link">
                         <i class="bi bi-envelope-fill"></i>
                         <span>Pesan</span>
                     </a>

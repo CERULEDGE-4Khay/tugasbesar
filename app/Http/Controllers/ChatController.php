@@ -35,6 +35,7 @@ class ChatController extends Controller
             'message' => $request->message
         ]);
 
-        return back();
+        return back()->with('success', 'Pesan berhasil dikirim ke mentor!');
+
     }
 }

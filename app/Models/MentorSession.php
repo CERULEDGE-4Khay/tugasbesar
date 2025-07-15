@@ -13,11 +13,11 @@ class MentorSession extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class, 'user_id');
     }
 
     public function mentor()
     {
-        return $this->belongsTo(Mentor::class);
+        return $this->belongsTo(Mentor::class, 'mentor_id');
     }
 }

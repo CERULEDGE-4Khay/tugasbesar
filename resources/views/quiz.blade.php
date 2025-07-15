@@ -7,23 +7,30 @@
   <h2 class="mb-4 mt-5 text-center text-white">Semua Level Quiz</h2>
 
   <div class="row">
-        @foreach ($missions as $mission)
-            <div class="col-md-4">
-                <div class="card mb-5 shadow p-3 mb-5 bg-body-tertiary rounded shadow">
-                    <div class="card-body">
-                        <h2>{{ $mission->mission_title }}</h2>
-                        <p class="text-muted">{{ $mission->description }}</p>
-                        <div class="d-flex justify-content-end">
-                            <a href="{{ route('user.quiz.show', ['id' => $mission->id]) }}" class="btn btn-primary">
-                                Lihat Quiz Misi Ini
-                            </a>
-                        </div>
-                    </div>
-                </div>
+    @forelse ($missions as $mission)
+      <div class="col-md-4">
+        <div class="card mb-5 shadow p-3 mb-5 bg-body-tertiary rounded shadow">
+          <div class="card-body">
+            <h2>{{ $mission->mission_title }}</h2>
+            <p class="text-muted">{{ $mission->description }}</p>
+            <div class="d-flex justify-content-end">
+              <a href="{{ route('user.quiz.show', ['id' => $mission->id]) }}" class="btn btn-primary">
+                Lihat Quiz Misi Ini
+              </a>
             </div>
-        @endforeach
-    </div>
+          </div>
+        </div>
+      </div>
+    @empty
+      <div class="col-12">
+        <div class="alert alert-info text-center text-white mt-4 rounded p-4">
+          <h4 class="mb-0">Belum ada Quiz nih, ditunggu aja ya!</h4>
+        </div>
+      </div>
+    @endforelse
+  </div>
 </div>
+
             @if(session('success'))
             <div id="popup-alert" class="custom-popup alert alert-success">
                 {{ session('success') }}

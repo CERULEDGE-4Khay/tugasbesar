@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
@@ -106,6 +107,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/chat/send', [ChatController::class, 'send'])->name('chat.send');
 });
 
+Route::get('/admin/messages', [AdminController::class, 'showMessages'])->name('admin.messages');
 
 Route::post('/progress/mark/{video}', [UserProgressController::class, 'markVideoAsCompleted'])
     ->middleware('auth')

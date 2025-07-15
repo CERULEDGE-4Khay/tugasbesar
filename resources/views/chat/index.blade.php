@@ -14,7 +14,7 @@
       <div class="flex-1 overflow-y-auto bg-gray-50 rounded-lg p-4 space-y-3 border shadow">
         @forelse ($messages as $msg)
           <div class="flex {{ $msg->sender_id === auth()->id() ? 'justify-end' : 'justify-start' }}">
-            <div class="{{ $msg->sender_id === auth()->id() ? 'bg-blue-600 text-white' : 'bg-gray-300 text-gray-900' }} px-4 py-2 rounded-2xl max-w-md text-sm">
+            <div class="{{ $msg->sender_id === auth()->id() ? 'bg-blue-600 text-dark' : 'bg-gray-300 text-gray-900' }} px-4 py-2 rounded-2xl max-w-md text-sm">
               {{ $msg->message }}
             </div>
           </div>
@@ -33,6 +33,7 @@
                 class="bg-success hover:bg-blue-800 text-white font-semibold px-6 py-2 rounded-full transition-all">
           Kirim
         </button>
+
       </form>
     </div>
 
@@ -54,5 +55,43 @@
 
   </div>
 </div>
-
+ @if(session('success'))
+        <div id="popup-alert" class="custom-popup alert alert-success">
+            {{ session('success') }}
+        </div>
+    @endif
+    
+    @if(session('error'))
+        <div id="popup-alert" class="custom-popup alert alert-danger">
+            {{ session('error') }}
+        </div>
+    @endif
+    
+    <style>
+        .custom-popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            padding: 20px 30px;
+            font-size: 18px;
+            border-radius: 8px;
+            text-align: center;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translate(-50%, -60%); }
+            to { opacity: 1; transform: translate(-50%, -50%); }
+        }
+    </style>
+    
+    <script>
+        // Auto-hide popup after 3.5 seconds
+        setTimeout(() => {
+            const popup = document.getElementById('popup-alert');
+            if (popup) popup.style.display = 'none';
+        }, 3500);
+    </script>
 @endsection
