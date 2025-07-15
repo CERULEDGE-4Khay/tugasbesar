@@ -2,10 +2,14 @@
 
 namespace App\Providers;
 
+use App\Listeners\LogLastLogin;
 use Illuminate\Auth\Events\Registered;
 use Illuminate\Auth\Listeners\SendEmailVerificationNotification;
 use Illuminate\Foundation\Support\Providers\EventServiceProvider as ServiceProvider;
 use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Auth;
+use App\Models\User;
+use Illuminate\Auth\Events\Login;
 
 class EventServiceProvider extends ServiceProvider
 {
@@ -18,6 +22,9 @@ class EventServiceProvider extends ServiceProvider
         Registered::class => [
             SendEmailVerificationNotification::class,
         ],
+        \Illuminate\Auth\Events\Login::class => [
+        \App\Listeners\LogLastLogin::class,
+        ],
     ];
 
     /**
@@ -25,7 +32,9 @@ class EventServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+         Event::listen(Login::class, function ($event) {
+            $event->user->update(['last_login_at' => now()]);
+        });
     }
 
     /**

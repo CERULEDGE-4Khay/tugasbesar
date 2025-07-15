@@ -1,6 +1,8 @@
 @extends('layouts.admin')
 
 @section('content')
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 <div class="col-12 col-lg-9">
     <div class="row">
         <div class="col-6 col-lg-3 col-md-6">
@@ -73,7 +75,7 @@
             </div>
         </div>
     </div>
-    <div class="row">
+    {{-- <div class="row">
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
@@ -84,9 +86,68 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
 
-    <div class="row">        
+<form method="GET" action="{{ route('admin.dashboard') }}" class="mb-3">
+    <div class="form-group">
+        <label for="year" class="mb-3">Pilih Tahun:</label>
+        <select name="year" id="year" class="form-control" onchange="this.form.submit()">
+            @foreach ($availableYears as $year)
+                <option value="{{ $year }}" {{ $selectedYear == $year ? 'selected' : '' }}>
+                    {{ $year }}
+                </option>
+            @endforeach
+        </select>
+    </div>
+</form>
+
+<canvas id="visitorLineChart" height="100"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const lineCtx = document.getElementById('visitorLineChart').getContext('2d');
+
+  const lineChart = new Chart(lineCtx, {
+    type: 'line',
+    data: {
+      labels: @json($labels), // Jan, Feb, dst
+      datasets: [{
+        label: 'Jumlah Pengunjung Bulanan',
+        data: @json($data),    // 0, 2, 5, dst
+        borderColor: '#007bff',
+        backgroundColor: 'rgba(0, 123, 255, 0.2)',
+        tension: 0.3,
+        fill: true,
+        pointBackgroundColor: '#007bff',
+        pointRadius: 5
+      }]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: {
+          display: true,
+          position: 'top'
+        },
+        title: {
+          display: true,
+          text: 'Statistik Pengunjung Bulanan'
+        }
+      },
+      scales: {
+        y: {
+          beginAtZero: true,
+          ticks: {
+            stepSize: 1
+          }
+        }
+      }
+    }
+  });
+</script>
+
+
+    <div class="row mt-3">        
     <div class="col-12 col-xl-8">
         <div class="card">
             <div class="card-header">

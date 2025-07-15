@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\HomeController;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController;
@@ -34,22 +35,15 @@ Route::get('/dashboard', [LearningController::class, 'dashboard'])->middleware('
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 
 
-Route::prefix('dashboard/admin')->group(function() {
-    Route::get('/', function() {
-        $userCount = App\Models\User::count();
-        $quizCount = App\Models\Quiz::count();
-        $missionCount = App\Models\Mission::count();
-        $recentComments = App\Models\Comment::latest()->with('user')->take(5)->get();
-        return view('admin.index', compact('userCount', 'quizCount', 'missionCount', 'recentComments'));
-    })->name('dashboard.admin');
-    
-    route::resource('mission', MissionController::class);
+Route::prefix('dashboard/admin')->middleware(['auth'])->group(function () {
+    Route::get('/', [App\Http\Controllers\AdminController::class, 'dashboard'])->name('dashboard.admin');
 
-
+    Route::resource('mission', MissionController::class);
     Route::resource('/course', CourseController::class)->parameters([
         'course' => 'courses'
     ]);
-})->middleware(['auth']);
+});
+
 
 Route::post('/update-progress', [UserProgressController::class, 'update'])
     ->middleware('auth') // karena kamu pakai auth biasa

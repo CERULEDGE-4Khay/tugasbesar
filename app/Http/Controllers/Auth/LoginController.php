@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
+use GuzzleHttp\Psr7\Request;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 
 class LoginController extends Controller
@@ -32,6 +33,11 @@ class LoginController extends Controller
      *
      * @return void
      */
+    protected function authenticated(Request $request, $user)
+{
+    $user->update(['last_login_at' => now()]);
+}
+
     public function __construct()
     {
         $this->middleware('guest')->except('logout');
