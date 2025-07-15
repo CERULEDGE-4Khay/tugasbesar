@@ -24,7 +24,7 @@
           </tr>
         </thead>
         <tbody>
-          @foreach ($courses as $course)
+          @forelse ($courses as $course)
             <tr>
               <th>{{ $loop->iteration }}</th>
               <td>{{ $course->name }}</td>
@@ -57,7 +57,11 @@
                 </form>
               </td>
             </tr>
-          @endforeach
+          @empty
+            <tr>
+              <td colspan="5" class="text-center">Belum ada qourses yang ditambahkan.</td>
+            </tr>
+          @endforelse
         </tbody>
       </table>
     </div>

@@ -14,7 +14,7 @@
     </div>
 </div>
 <div class="row">
-    @foreach ($missions as $mission)
+    @forelse ($missions as $mission)
         <div class="col-md-4">
             <div class="card">
                 <div class="card-body">
@@ -28,7 +28,13 @@
                 </div>
             </div>
         </div>
-    @endforeach
+    @empty
+        <div class="row">
+            <div class="col-md-12 shadow border bg-danger px-3">
+                <p class="text-white mb-3 mt-3 d-flex justify-content-center">Belum ada Missons yang ditambahkan.</p>
+            </div>
+        </div>
+    @endforelse
 </div>
 
 @endsection

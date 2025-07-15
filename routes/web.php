@@ -12,6 +12,7 @@ use App\Http\Controllers\MentoringController;
 use App\Http\Controllers\MissionController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\UserProgressController;
+use App\Http\Controllers\CommentController;
 use App\Models\Courses;
 
 Route::get('/', function () {
@@ -29,16 +30,17 @@ Route::get('/register', function () {
 });
 
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth'])->name('dashboard');
+Route::get('/dashboard', [LearningController::class, 'dashboard'])->middleware('auth')->name('dashboard');
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+
 
 Route::prefix('dashboard/admin')->group(function() {
     Route::get('/', function() {
         $userCount = App\Models\User::count();
         $quizCount = App\Models\Quiz::count();
         $missionCount = App\Models\Mission::count();
-        return view('admin.index', compact('userCount', 'quizCount', 'missionCount'));
+        $recentComments = App\Models\Comment::latest()->with('user')->take(5)->get();
+        return view('admin.index', compact('userCount', 'quizCount', 'missionCount', 'recentComments'));
     })->name('dashboard.admin');
     
     route::resource('mission', MissionController::class);
@@ -108,6 +110,11 @@ Route::middleware(['auth'])->group(function () {
 });
 
 Route::get('/admin/messages', [AdminController::class, 'showMessages'])->name('admin.messages');
+Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
+
+Route::middleware(['auth'])->group(function () {
+    Route::post('/comment', [CommentController::class, 'store'])->name('comment.store');
+});
 
 Route::post('/progress/mark/{video}', [UserProgressController::class, 'markVideoAsCompleted'])
     ->middleware('auth')

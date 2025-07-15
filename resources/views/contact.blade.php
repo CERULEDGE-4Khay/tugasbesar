@@ -1,8 +1,7 @@
 @extends('layouts.guest')
 @section('content')
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact section mt-2 bg-dark">
+{{-- <section id="contact" class="contact section mt-2 bg-dark">
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
@@ -79,6 +78,65 @@
 
     </div>
 
-  </section><!-- /Contact Section -->
+</section> --}}
+
+@if(session('success'))
+  <div id="popup-alert" class="custom-popup alert alert-success">
+      {{ session('success') }}
+  </div>
+@endif
+            
+@if(session('error'))
+  <div id="popup-alert" class="custom-popup alert alert-danger">
+      {{ session('error') }}
+  </div>
+@endif
+
+<style>
+.custom-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    padding: 20px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    text-align: center;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+</style>
+
+<script>
+// Auto-hide popup after 3.5 seconds
+setTimeout(() => {
+    const popup = document.getElementById('popup-alert');
+    if (popup) popup.style.display = 'none';
+}, 3500);
+</script>
+
+<div class="page-title dark-background" data-aos="fade" style="background-image: url(/assets/img/about.jpg);">
+</div>
+<form method="POST" action="{{ route('comment.store') }}" class="mt-5 mb-3 bg-dark justify-content-center py-8 px-4" data-aos="fade-up" data-aos-delay="500">
+  @csrf
+  <div class="row gy-4">
+    <div>
+      <h2 class="text-center text-white">Tempat kamu untuk berkomentar!</h2>
+    </div>
+    <div class="col-md-12 px-4 py-3">
+      <textarea class="form-control" name="comment" rows="4" placeholder="Tulis komentar tentang website..." required></textarea>
+    </div>
+
+    <div class="col-md-12 text-center d-flex justify-content-end py-5">
+      <button type="submit" class="btn btn-success">Kirim Komentar</button>
+    </div>
+
+  </div>
+</form>
 
 @endsection
