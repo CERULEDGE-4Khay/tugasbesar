@@ -55,4 +55,14 @@ class User extends Authenticatable
     {
     return $this->hasMany(Comment::class);
     }
+    public function quizSubmissions()
+    {
+    return $this->hasMany(QuizSubmission::class);
+    }
+
+public function courseProgress()
+    {
+    return $this->hasMany(UserProgress::class);
+    }
+
 }

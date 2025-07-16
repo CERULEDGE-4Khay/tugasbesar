@@ -16,4 +16,9 @@ class Quiz extends Model
     public function mission(){
         return $this->belongsTo(Mission::class);
     }
+    public function quizSubmissions()
+{
+    return $this->hasMany(QuizSubmission::class);
+}
+
 }

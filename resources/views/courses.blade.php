@@ -31,38 +31,83 @@
             <a href="/index" class="btn btn-primary">
             <i class="bi bi-arrow-left-square-fill me-2"></i> Kembali Ke Kursus
             </a>
-            <button onclick="markTextAsRead()" class="btn btn-primary"> Selesai
+            <button onclick="markTextAsRead()" class="btn btn-success"> Selesai
             </button>
         </div>
     </div>
     <script>
-            function markTextAsRead() {
-        fetch('/update-progress', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-            },
-            body: JSON.stringify({
-                video_id: null,
-                course_id: {{ $courses->id }},
-                progress_percentage: 100,
-                is_completed: true
-            })
+//          function markTextAsRead() {
+//     fetch('/progress/save', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json',
+//             'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+//         },
+//         body: JSON.stringify({
+//             course_id: {{ $courses->id }},
+//             progress_percentage: 100,
+//             is_completed: true
+//         })
+//     })
+//     .then(async (response) => {
+//         const data = await response.json().catch(() => ({}));
+//         console.log('STATUS:', response.status);
+//         console.log('OK:', response.ok);
+//         console.log('DATA:', data);
+
+//         if (response.ok) {
+//             alert('Progres berhasil diperbarui. Selamat! Kamu telah menyelesaikan course ini.');
+//             window.location.href = '/index';
+//         } else {
+//             alert(`Terjadi kesalahan saat memperbarui progres. Status: ${response.status}`);
+//         }
+//     })
+//     .catch(error => {
+//         console.error('FETCH ERROR:', error);
+//         alert('Gagal mengirim data. Periksa koneksi atau coba lagi.');
+//     });
+// }
+function markTextAsRead() {
+    fetch('/progress/save', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+            'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+        },
+        body: JSON.stringify({
+            video_id: null,
+            course_id: {{ $courses->id }},
+            progress_percentage: 100,
+            is_completed: true
         })
-        .then(response => {
-            if (response.ok) {
-                alert('Progres berhasil diperbarui. Selamat! Kamu telah menyelesaikan course ini.');
-                window.location.href = '/index'; // Redirect ke halaman kursus
-            } else {
-                alert('Terjadi kesalahan saat memperbarui progres.');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Gagal mengirim data. Periksa koneksi atau coba lagi.');
-        });
+    })
+    .then(response => {
+        if (response.ok) {
+            Swal.fire({
+                icon: 'success',
+                title: 'Progres Tersimpan!',
+                text: 'Selamat! Kamu telah menyelesaikan course ini 🎉',
+                confirmButtonText: 'Lanjut Belajar'
+            }).then(() => {
+                window.location.href = '/index';
+            });
+        } else {
+            Swal.fire({
+                icon: 'error',
+                title: 'Gagal Menyimpan!',
+                text: `Terjadi kesalahan saat menyimpan progres. Status: ${response.status}`
+            });
         }
+    })
+    .catch(error => {
+        console.error('FETCH ERROR:', error);
+        Swal.fire({
+            icon: 'warning',
+            title: 'Koneksi Bermasalah',
+            text: 'Gagal mengirim data. Coba periksa koneksi internet kamu.'
+        });
+    });
+}
 
     </script>
 @endsection

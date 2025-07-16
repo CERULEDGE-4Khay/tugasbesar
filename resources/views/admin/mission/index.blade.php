@@ -20,10 +20,19 @@
                 <div class="card-body">
                     <h2>{{ $mission->mission_title }}</h2>
                     <p class="text-muted">{{ $mission->description }}</p>
-                    <div class="d-flex justify-content-end">
+                    <div class="d-flex justify-content-between mt-5 mb-1">
                         <a href="{{ route('quiz.index', ['mission_id' => $mission->id]) }}" class="btn btn-primary">
                             Lihat Quiz Misi Ini
                         </a>
+                    
+                        <form action="{{ route('mission.destroy', $mission->id) }}" 
+                            method="POST" 
+                            class="d-inline"
+                            onsubmit="return confirm('Apakah kamu yakin ingin menghapus mission ini?');">
+                            @csrf
+                            @method('DELETE')
+                            <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                        </form>
                     </div>
                 </div>
             </div>

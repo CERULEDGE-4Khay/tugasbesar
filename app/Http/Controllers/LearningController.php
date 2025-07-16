@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 use App\Models\Courses;
 use App\Models\Videos;
 use App\Models\UserProgress;
 use App\Models\Achievement;
+use App\Models\QuizSubmission;
+use App\Models\Mission;
 
 class LearningController extends Controller
 {
@@ -15,7 +18,9 @@ class LearningController extends Controller
     public function dashboard()
     {
         $user = Auth::user();
-
+        $missions = Mission::with(['quizzes.quizSubmissions' => function($query) {
+        $query->where('user_id', auth()->id());
+    }, 'quizzes.quizAnswers'])->get();
         // Ambil progres user
         $progress = UserProgress::where('user_id', $user->id)->with('course')->get();
 
@@ -27,7 +32,19 @@ class LearningController extends Controller
         // Ambil pencapaian
         $achievements = Achievement::where('user_id', $user->id)->get();
 
-        return view('dashboard', compact('courses', 'user', 'progress', 'latestVideos', 'achievements'));
+         // ✅ Ambil quiz yang sudah dikerjakan user
+        $completedQuizzes = QuizSubmission::with('quiz')
+            ->where('user_id', $user->id)
+            ->get();
+
+        // ✅ Ambil course yang sudah diselesaikan user
+        $completedCourses = UserProgress::with('course')
+            ->where('user_id', $user->id)
+            ->where('is_completed', true)
+            ->get();
+
+        return view('dashboard', compact(
+            'courses', 'user', 'progress', 'latestVideos', 'achievements','completedQuizzes','completedCourses','missions'));
     }
 
     // Menampilkan daftar kursus / modul
@@ -52,27 +69,51 @@ class LearningController extends Controller
     }
 
     // Simpan progres belajar
-    public function saveProgress(Request $request)
-    {
-        $progress = UserProgress::updateOrCreate(
-            [
-                'user_id' => Auth::id(),
-                'course_id' => $request->course_id,
-            ],
-            [
-                'progress_percentage' => $request->progress,
-                'is_completed' => $request->progress >= 100,
-            ]
-        );
+   public function saveProgress(Request $request)
+{
+    Log::info('Memulai penyimpanan progres...', $request->all());
 
-        // Tambahkan pencapaian jika selesai
-        if ($progress->is_completed) {
-            Achievement::firstOrCreate([
-                'user_id' => Auth::id(),
-                'achievement_name' => 'Selesaikan Kursus: ' . $progress->course->title,
-            ]);
-        }
+    $validated = $request->validate([
+        'course_id' => 'required|exists:courses,id',
+        'progress_percentage' => 'required|numeric|min:0|max:100',
+        'is_completed' => 'required|boolean'
+    ]);
 
-        return redirect()->back()->with('status', 'Progres berhasil disimpan!');
+    Log::info('Validasi berhasil', $validated);
+
+    $progress = UserProgress::updateOrCreate(
+    [
+        'user_id' => auth()->id(),
+        'course_id' => $validated['course_id'],
+    ],
+    [
+        'video_id' => null, 
+        'progress_percentage' => $validated['progress_percentage'],
+        'is_completed' => $validated['is_completed'],
+    ]
+    );
+
+
+    Log::info('Progress tersimpan:', $progress->toArray());
+
+    if ($progress->is_completed) {
+        $course = Courses::find($validated['course_id']);
+        Log::info('Course ditemukan:', ['course' => $course]);
+
+        $achievementName = $course ? 'Selesaikan Kursus: ' . $course->name : 'Selesaikan Kursus';
+
+        Achievement::firstOrCreate([
+        'user_id' => auth()->id(),
+        'achievement_name' => $achievementName,
+    ], [
+        'icon' => 'default-icon.png' // Ganti sesuai default icon kamu
+    ]);
+
+
+        Log::info('Achievement berhasil disimpan:', ['achievement_name' => $achievementName]);
     }
+    Log::info('RETURN JSON', ['response' => 'Progress saved!']);
+    return response()->json(['message' => 'Progress saved!'], 200);
+}
+
 }

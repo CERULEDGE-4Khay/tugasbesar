@@ -40,7 +40,7 @@ class QuizController extends Controller
     {
         // Validasi input
         $request->validate([
-            'mission_id'    => 'required|exists:missions,id', // ✅ Tambahan
+            'mission_id'    => 'required|exists:missions,id', 
             'quiz_title'    => 'required|string|max:255',
             'video'         => 'nullable|string',
             'quiz_description' => 'nullable|string',
@@ -54,7 +54,7 @@ class QuizController extends Controller
 
         // Simpan ke tabel quizzes
         $quiz = Quiz::create([
-            'mission_id'        => $request->mission_id, // ✅ Tambahan
+            'mission_id'        => $request->mission_id, 
             'quiz_title'        => $request->quiz_title,
             'quiz_description'  => $request->quiz_description,
             'content'           => $request->content,

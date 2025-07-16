@@ -52,6 +52,7 @@
         <p><strong>Status:</strong> Online</p>
       </div>
     </div>
+    <a href="{{ route('mentoring.index') }}" class="btn btn-outline-primary mt-4 mb-3 d-flex justify-content-center">Kembali</a>
 
   </div>
 </div>

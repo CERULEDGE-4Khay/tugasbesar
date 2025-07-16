@@ -25,6 +25,7 @@ class AdminController extends Controller
     $selectedYear = request()->get('year', now()->year);
     $recentComments = Comment::latest()->with('user')->take(5)->get();
 
+    $totalVisitors = User::whereNotNull('last_login_at')->count();
     $userCount = User::count();
     $quizCount = Quiz::count();
     $missionCount = Mission::count();
@@ -60,7 +61,8 @@ class AdminController extends Controller
         'labels',
         'data',
         'selectedYear',
-        'availableYears'
+        'availableYears',
+        'totalVisitors'
     ));
     }
 }

@@ -15,8 +15,8 @@
                             </div>
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                            <h6 class="text-muted font-semibold">Jumlah<br> User</h6>
-                            <h6 class="font-extrabold mb-0">{{ $userCount }}</h6>
+                            <h6 class="text-muted font-semibold">Jumlah<br> Pengunjung</h6>
+                            <h6 class="font-extrabold mb-0">{{ $totalVisitors }}</h6>
                         </div>
                     </div>
                 </div>
@@ -33,42 +33,42 @@
                         </div>
                         <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
                             <h6 class="text-muted font-semibold">Jumlah<br>
-                                Quiz</h6>
+                                User</h6>
+                            <h6 class="font-extrabold mb-0">{{ $userCount }}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body px-4 py-4-5">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start">
+                            <div class="stats-icon green mb-2">
+                                <i class="bi bi-person-workspace mb-4 px-(1)"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                            <h6 class="text-muted font-semibold">Jumlah<br>Qourse</h6>
+                            <h6 class="font-extrabold mb-0">{{ $missionCount }}</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-6 col-lg-3 col-md-6">
+            <div class="card">
+                <div class="card-body px-4 py-4-5">
+                    <div class="row">
+                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start">
+                            <div class="stats-icon green mb-2">
+                                <i class="bi bi-card-text mb-4 px-(1)"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
+                            <h6 class="text-muted font-semibold">Jumlah <br>Quiz</h6>
                             <h6 class="font-extrabold mb-0">{{ $quizCount }}</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-lg-3 col-md-6">
-            <div class="card">
-                <div class="card-body px-4 py-4-5">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start">
-                            <div class="stats-icon green mb-2">
-                                <i class="iconly-boldAdd-User"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                            <h6 class="text-muted font-semibold">Jumlah Qourse</h6>
-                            <h6 class="font-extrabold mb-0">{{ $missionCount }}</h6>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-6 col-lg-3 col-md-6">
-            <div class="card">
-                <div class="card-body px-4 py-4-5">
-                    <div class="row">
-                        <div class="col-md-4 col-lg-12 col-xl-12 col-xxl-5 d-flex justify-content-start">
-                            <div class="stats-icon green mb-2">
-                                <i class="bi bi-card-text mb-4 px-(6)"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-lg-12 col-xl-12 col-xxl-7">
-                            <h6 class="text-muted font-semibold">Jumlah Komen</h6>
-                            <h6 class="font-extrabold mb-0">{{ $missionCount }}</h6>
                         </div>
                     </div>
                 </div>

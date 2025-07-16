@@ -46,7 +46,7 @@ Route::prefix('dashboard/admin')->middleware(['auth'])->group(function () {
 
 
 Route::post('/update-progress', [UserProgressController::class, 'update'])
-    ->middleware('auth') // karena kamu pakai auth biasa
+    ->middleware('auth') 
     ->name('progress.update');
 
 // Route::get('/test-achievement', [HomeController::class, 'testAchievement'])->middleware('auth');

@@ -71,6 +71,7 @@ class MissionController extends Controller
      */
     public function destroy(Mission $mission)
     {
-        //
+    $mission->delete();
+    return redirect()->route('mission.index')->with('success', 'Mission berhasil dihapus.');
     }
 }

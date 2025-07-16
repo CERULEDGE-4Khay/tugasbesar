@@ -7,7 +7,7 @@
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(/img/guitar1.jpg);">
       <div class="container position-relative">
         <h1>QUIZ PickItUp</h1>
-        <p>Selamat Datang di Quiz, silahkan isi jawaban yang sesuai tapi sesuai pengetahuanmu ya!
+        <p>Selamat Datang di Quiz, silahkan isi jawaban yang sesuai dengan pengetahuanmu ya!
         </p>
         <nav class="breadcrumbs">
           <ol>

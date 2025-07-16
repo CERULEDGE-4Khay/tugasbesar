@@ -29,14 +29,6 @@
                         </div>
                     </div>
                 @endforeach
-    
-            <div class="card">
-                <h3>Progres Belajar</h3>
-                <div class="progress-bar">
-                    <div class="progress" style="width: 90%;"></div>
-                </div>
-                <p>Level: Pemula (90% selesai)</p>
-            </div>
 
                 @if ($courses->isEmpty())
                     <div class="alert alert-info text-center" role="alert">

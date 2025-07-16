@@ -20,9 +20,13 @@ class QuizSubmission extends Model
         return $this->belongsTo(Quiz::class);
     }
 
-    // ✅ Relasi ke Jawaban
+
     public function answer()
     {
         return $this->belongsTo(QuizAnswer::class, 'quiz_answer_id');
+    }
+    public function quizAnswer()
+    {
+    return $this->belongsTo(QuizAnswer::class);
     }
 }
