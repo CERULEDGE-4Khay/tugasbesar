@@ -42,31 +42,37 @@
         @enderror
         <div class="input-box">
             <input type="password" required="required" name="password_confirmation" id="password_confirmation" />
-            <span>Connfirm Password</span>
+            <span>Confirm Password</span>
             <button type="button" onclick="togglePasswordConfirm()" class="toggle-btn" 
                     style="position:absolute; right:10px; top:50%; transform:translateY(-50%); border:none; background:none; z-index:10; cursor:pointer;">
                     👁️
                 </button>
         </div>
-        <button class="btn btn-success mt-3 w-100" type="submit">Register</button>
-        <hr />
-        <div class="links">
+        
+        <button class="btn btn-success mt-3 w-100" type="submit">
+            Register
+        </button>
+
+        <hr class="my-4" />
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
             <span>Already have an account?</span>
-            <a href="/login">Login</a>
+            <a href="/login" class="btn btn-outline-primary btn-sm">Login</a>
         </div>
+
+        <a href="/" class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2">
+            <span>🏠</span>
+            <span>Back to Home</span>
+        </a>
+
+
         <div class="links">
-            <a href="/">Back to Home</a>
-        </div>
-        <div class="links">
-            <a href="" class="d-block btn btn-outline-secondary" style="width: 100%;">
-                Google
+            <a href="{{ route('google.login') }}" class="d-flex align-items-center justify-content-center gap-2 btn btn-outline-secondary" style="width: 100%;">
+                <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Icon" style="width: 20px; height: 20px;">
+                <span>Register with Google</span>
             </a>
         </div>
-        <div class="links">
-            <a href="" class="d-block btn btn-outline-primary" style="width: 100%;">
-                facebook
-            </a>
-        </div>
+
     </form>
 </div>
 

@@ -42,24 +42,26 @@
                 </button>
             </div>
             <button class="btn btn-success mt-3 w-100" type="submit">Login</button>
-            <hr />
-            <div class="links">
-                <a href="/verify">Forgot Password?</a>
-                <a href="/register">Register</a>
+
+            <hr class="my-4"/>
+
+            <div class="d-flex justify-content-between align-items-center mb-3">
+            <span><a href="/verify" class="btn btn-outline-primary btn-sm">Forgot Password?</a></span>
+            <a href="/register" class="btn btn-outline-primary btn-sm">Register</a>
             </div>
+            <a href="/" class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center gap-2">
+            <span>🏠</span>
+            <span>Back to Home</span>
+            </a>
+
             <div class="links">
-                <a href="/">Back to Home</a>
-            </div>
-            <div class="links">
-                <a href="" class="d-block btn btn-outline-secondary" style="width: 100%;">
-                    Google
+                <a href="{{ route('google.login') }}" class="d-flex align-items-center justify-content-center gap-2 btn btn-outline-secondary" style="width: 100%;">
+                    <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg" alt="Google Icon" style="width: 20px; height: 20px;">
+                    <span>Login with Google</span>
                 </a>
             </div>
-        </div>
-        <div class="links">
-            <a href="" class="d-block btn btn-outline-primary" style="width: 100%;">
-                facebook
-            </a>
+
+
         </div>
     </form>
 </div>
