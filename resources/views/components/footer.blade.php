@@ -25,32 +25,45 @@
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="/">Beranda</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="/about">Tentang Kami</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Terms of service</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Privacy policy</a></li>
         </ul>
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Pelayanan Kami</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Rekomendasi Gitar</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="/chord">Katalog Chord</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="/mentoring">Mentoring</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="/materi">Materi</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="/latihaninteraktif">Latihan Interaktif</a></li>
-          <li><i class="bi bi-chevron-right"></i> <a href="#">Berita Gitar</a></li>
         </ul>
       </div>
 
       <div class="col-lg-4 col-md-12 footer-newsletter">
-        <h4>Our Newsletter</h4>
-        <p>Subscribe to our newsletter and receive the latest news about our products and services!</p>
-        <form action="forms/newsletter.php" method="post" class="php-email-form">
-          <div class="newsletter-form"><input type="email" name="email"><input type="submit" value="Subscribe"></div>
-          <div class="loading">Loading</div>
-          <div class="error-message"></div>
-          <div class="sent-message">Your subscription request has been sent. Thank you!</div>
+        <h4>Buletin Kami</h4>
+        <p>Berlangganan buletin kami dan terima berita terbaru tentang produk dan layanan kami!</p>
+        <form action="/subscribe" method="post">
+          @csrf
+          <div class="newsletter-form">
+            <input type="email" name="email" placeholder="Your email" required>
+            <input type="submit" value="Subscribe">
+          </div>
+          <div class="loading" style="display:none;">Loading</div>
+          <div class="error-message" style="display:none;color:red;"></div>
+          @if(session('success'))
+            <div class="alert alert-success">
+              {{ session('success') }}
+            </div>
+          @endif
+    
+          @if(session('error'))
+            <div class="alert alert-danger">
+              {{ session('error') }}
+            </div>
+          @endif
+          
         </form>
       </div>
+
 
     </div>
   </div>

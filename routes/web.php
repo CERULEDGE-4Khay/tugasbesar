@@ -14,6 +14,7 @@ use App\Http\Controllers\MissionController;
 use App\Http\Controllers\QuizController;
 use App\Http\Controllers\UserProgressController;
 use App\Http\Controllers\CommentController;
+use App\Http\Controllers\NewsletterController;
 use App\Models\Courses;
 
 Route::get('/', function () {
@@ -60,6 +61,8 @@ Route::get('/about', function () {
 Route::get('/courses', function () {
     return view('courses');
 });
+Route::post('/subscribe', [NewsletterController::class, 'subscribe']);
+
 Route::get('/auth/passwords/confirm', function () {
     return view('auth/passwords/confirm');
 });

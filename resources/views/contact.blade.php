@@ -121,22 +121,74 @@ setTimeout(() => {
 </script>
 
 <div class="page-title dark-background" data-aos="fade" style="background-image: url(/assets/img/about.jpg);">
+  <div class="container position-relative">
+        <h1>Hai, {{ auth()->user()->name }}!</h1>
+        <p>Udah melihat semua fitur kami? sekarang kamu bebas berkomentar disini.</p>
+  </div>      
 </div>
-<form method="POST" action="{{ route('comment.store') }}" class="mt-5 mb-3 bg-dark justify-content-center py-8 px-4" data-aos="fade-up" data-aos-delay="500">
+<form method="POST" action="{{ route('comment.store') }}" class="mt-5 mb-3 justify-content-center py-8 px-4" data-aos="fade-up" data-aos-delay="500">
   @csrf
-  <div class="row gy-4">
-    <div>
-      <h2 class="text-center text-white">Tempat kamu untuk berkomentar!</h2>
-    </div>
-    <div class="col-md-12 px-4 py-3">
-      <textarea class="form-control" name="comment" rows="4" placeholder="Tulis komentar tentang website..." required></textarea>
+  <div class="container section-title" data-aos="fade-up">
+      <h2 class="text-center">Kontak</h2><br>
+      <p class="text-center">Apa pendapatmu tentang kami?</p>
+    </div><!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+        <div class="col-lg-6 ">
+          <div class="row gy-4">
+
+            <div class="col-lg-12">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt"></i>
+                <h3>Alamat</h3>
+                <p>Jl. Babakan Ciparay, Kota Bandung, BDG 535022</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone"></i>
+                <h3>Hubungi Kami</h3>
+                <p>+62878-7263-4316</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="col-md-6">
+              <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope"></i>
+                <h3>Email Kami</h3>
+                <p>pickitup@gmail.com</p>
+              </div>
+            </div><!-- End Info Item -->
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="row gy-4">
+
+              <div class="col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Nama Kamu.." required="">
+              </div>
+
+              <div class="col-md-12">
+                 <textarea class="form-control" name="comment" rows="4" placeholder="Tulis komentar tentang website..." required></textarea>
+              </div>
+
+              <div class="col-md-12 text-center d-flex justify-content-end py-5">
+              <button type="submit" class="btn btn-success">Kirim Komentar</button>
+              </div>
+
+            </div>
+        </div>
+
+      </div>
+
     </div>
 
-    <div class="col-md-12 text-center d-flex justify-content-end py-5">
-      <button type="submit" class="btn btn-success">Kirim Komentar</button>
-    </div>
 
-  </div>
 </form>
 
 @endsection

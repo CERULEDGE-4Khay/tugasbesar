@@ -3,7 +3,7 @@
         <div class="sidebar-header position-relative">
             <div class="d-flex justify-content-between align-items-center">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="/">
                         <img
                             src="{{ asset('img/pickitup-logo.png')}}"
                             alt="Logo Pickitup"
@@ -79,7 +79,7 @@
                     </a>
 
                     <ul class="submenu">
-                        <li class="submenu-item">
+                        <li class="submenu-item {{ request()->is('course.create') ? 'active' : '' }}">
                             <a href="{{ route('course.create') }}" class="submenu-link">Add Course</a>
                         </li>
                         <li class="submenu-item">
