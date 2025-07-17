@@ -67,11 +67,11 @@
                                 </div>
 
                                 @if ($score >= 80)
-                                    <div class="alert alert-success p-2 mt-2">👍 Nilai bagus!</div>
+                                    <div class="alert alert-success p-2 mt-2">👍 Nilai yg bagus!</div>
                                 @elseif ($score >= 50)
-                                    <div class="alert alert-warning p-2 mt-2">🙂 Cukup, bisa lebih baik</div>
+                                    <div class="alert alert-warning p-2 mt-2">🙂 Cukup, tapi perlu ditingkatkan</div>
                                 @else
-                                    <div class="alert alert-danger p-2 mt-2">😢 Perlu belajar lagi</div>
+                                    <div class="alert alert-danger p-2 mt-2">😢 Kamu perlu belajar lagi..</div>
                                 @endif
                             </div>
                         </div>

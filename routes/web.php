@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\ChatController;
+use App\Http\Controllers\ChordController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\LearningController;
 use App\Http\Controllers\MentoringController;
@@ -43,6 +44,7 @@ Route::prefix('dashboard/admin')->middleware(['auth'])->group(function () {
     Route::get('/', [App\Http\Controllers\AdminController::class, 'dashboard'])->name('dashboard.admin');
 
     Route::resource('mission', MissionController::class);
+    Route::resource('/chords', ChordController::class);
     Route::resource('/course', CourseController::class)->parameters([
         'course' => 'courses'
     ]);
@@ -58,6 +60,8 @@ Route::post('/update-progress', [UserProgressController::class, 'update'])
 Route::get('/contact', function () {
     return view('contact');
 });
+Route::get('/katalog-chord', [ChordController::class, 'katalog'])->name('katalog.chords');
+
 Route::get('/about', function () {
     return view('about');
 });
@@ -109,6 +113,7 @@ Route::middleware(['auth'])->group(function () {
     Route::post('/chat/send', [ChatController::class, 'send'])->name('chat.send');
 });
 
+Route::get('/admin/profile', [App\Http\Controllers\AdminController::class, 'profile'])->name('admin.profile');
 Route::get('/admin/messages', [AdminController::class, 'showMessages'])->name('admin.messages');
 Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
 

@@ -21,7 +21,7 @@
       </div>
 
       <div class="col-lg-2 col-md-3 footer-links">
-        <h4>Useful Links</h4>
+        <h4>Link Kami</h4>
         <ul>
           <li><i class="bi bi-chevron-right"></i> <a href="/">Beranda</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="/about">Tentang Kami</a></li>
@@ -31,7 +31,7 @@
       <div class="col-lg-2 col-md-3 footer-links">
         <h4>Pelayanan Kami</h4>
         <ul>
-          <li><i class="bi bi-chevron-right"></i> <a href="/chord">Katalog Chord</a></li>
+          <li><i class="bi bi-chevron-right"></i> <a href="/katalog-chord">Katalog Chord</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="/mentoring">Mentoring</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="/materi">Materi</a></li>
           <li><i class="bi bi-chevron-right"></i> <a href="/latihaninteraktif">Latihan Interaktif</a></li>
@@ -44,7 +44,7 @@
         <form action="/subscribe" method="post">
           @csrf
           <div class="newsletter-form">
-            <input type="email" name="email" placeholder="Your email" required>
+            <input type="email" name="email" placeholder="Masukin Email Kamu" required>
             <input type="submit" value="Subscribe">
           </div>
           <div class="loading" style="display:none;">Loading</div>

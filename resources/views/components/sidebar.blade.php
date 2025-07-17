@@ -119,6 +119,22 @@
                     </ul>
                 </li>
 
+                <li class="sidebar-item has-sub">
+                    <a href="#" class="sidebar-link">
+                        <i class="bi bi-c-square-fill"></i>
+                        <span>Katalog Chords</span>
+                    </a>
+
+                    <ul class="submenu">
+                        <li class="submenu-item">
+                            <a href="{{ route('chords.create') }}">Add Chord</a>
+                        </li>
+                        <li class="submenu-item">
+                            <a href="{{ route('chords.index') }}">List Chord</a>
+                        </li>
+                    </ul>
+                </li>
+
                 <li class="sidebar-title">Pages</li>
 
                 <li class="sidebar-item">
@@ -136,7 +152,7 @@
 
                     <ul class="submenu">
                         <li class="submenu-item">
-                            <a href="account-profile.html" class="submenu-link">Profil</a>
+                            <a href="{{ route('admin.profile') }}" class="submenu-link">Profil</a>
                         </li>
 
                         <li class="submenu-item">

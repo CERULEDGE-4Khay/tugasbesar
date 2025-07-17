@@ -812,8 +812,8 @@
 
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Contact</h2>
-      <p>What Do You Think About Us?</p>
+      <h2>Kontak Kami</h2>
+      <p>Apa yang kamu pikir tentang kita?</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -825,7 +825,7 @@
             <div class="col-lg-12">
               <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt"></i>
-                <h3>Address</h3>
+                <h3>Alamat</h3>
                 <p>Jl. Babakan Ciparay, Kota Bandung, BDG 535022</p>
               </div>
             </div><!-- End Info Item -->
@@ -833,7 +833,7 @@
             <div class="col-md-6">
               <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
                 <i class="bi bi-telephone"></i>
-                <h3>Call Us</h3>
+                <h3>Hubungi Kami</h3>
                 <p>+62878-7263-4316</p>
               </div>
             </div><!-- End Info Item -->
@@ -841,7 +841,7 @@
             <div class="col-md-6">
               <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
                 <i class="bi bi-envelope"></i>
-                <h3>Email Us</h3>
+                <h3>Email Kami</h3>
                 <p>pickitup@gmail.com</p>
               </div>
             </div><!-- End Info Item -->
@@ -870,9 +870,6 @@
               </div>
 
               <div class="col-md-12 text-center">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
 
                 <button type="submit">Send Message</button>
               </div>

@@ -25,7 +25,7 @@
                 <li><a href="#">Deep Dropdown 5</a></li>
               </ul> --}}
             </li>
-            <li><a href="#">Katalog Chord Dasar</a></li>
+            <li><a href="/katalog-chord">Katalog Chord Dasar</a></li>
             <li><a href="/mentoring">Mentoring</a></li>
             <li><a href="/latihaninteraktif">Latihan Interaktif</a></li>
           </ul>

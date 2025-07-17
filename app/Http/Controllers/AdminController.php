@@ -65,4 +65,10 @@ class AdminController extends Controller
         'totalVisitors'
     ));
     }
+    public function profile()
+    {
+    $user = auth()->user(); // ambil data admin yg login
+    return view('admin.profile', compact('user'));
+    }
+
 }

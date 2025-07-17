@@ -131,9 +131,9 @@ setTimeout(() => {
   <div class="container section-title" data-aos="fade-up">
       <h2 class="text-center">Kontak</h2><br>
       <p class="text-center">Apa pendapatmu tentang kami?</p>
-    </div><!-- End Section Title -->
+  </div><!-- End Section Title -->
 
-    <div class="container" data-aos="fade-up" data-aos-delay="100">
+    <div class="container shadow" data-aos="fade-up" data-aos-delay="100">
 
       <div class="row gy-4">
         <div class="col-lg-6 ">
@@ -185,8 +185,7 @@ setTimeout(() => {
         </div>
 
       </div>
-
-    </div>
+    </div>  
 
 
 </form>
