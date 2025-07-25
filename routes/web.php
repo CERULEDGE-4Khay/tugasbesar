@@ -59,7 +59,7 @@ Route::post('/update-progress', [UserProgressController::class, 'update'])
 
 Route::get('/contact', function () {
     return view('contact');
-});
+})->middleware('auth');
 Route::get('/katalog-chord', [ChordController::class, 'katalog'])->name('katalog.chords');
 
 Route::get('/about', function () {

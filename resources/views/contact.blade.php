@@ -128,12 +128,13 @@ setTimeout(() => {
 </div>
 <form method="POST" action="{{ route('comment.store') }}" class="mt-5 mb-3 justify-content-center py-8 px-4" data-aos="fade-up" data-aos-delay="500">
   @csrf
+  <section id="contact" class="contact section">
   <div class="container section-title" data-aos="fade-up">
       <h2 class="text-center">Kontak</h2><br>
       <p class="text-center">Apa pendapatmu tentang kami?</p>
   </div><!-- End Section Title -->
 
-    <div class="container shadow" data-aos="fade-up" data-aos-delay="100">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
 
       <div class="row gy-4">
         <div class="col-lg-6 ">
@@ -168,25 +169,16 @@ setTimeout(() => {
 
         <div class="col-lg-6">
             <div class="row gy-4">
-
-              <div class="col-md-6">
-                <input type="text" name="name" class="form-control" placeholder="Nama Kamu.." required="">
+              <div class="col-md-12 justify-content-center py-4 shadow">
+                 <textarea class="form-control py-3" name="comment" rows="4" placeholder="Tulis komentarmu tentang website kami..." required></textarea>
+                 <button type="submit" class="btn btn-success d-flex mt-4 mx-auto">Kirim Komentar</button>
               </div>
-
-              <div class="col-md-12">
-                 <textarea class="form-control" name="comment" rows="4" placeholder="Tulis komentar tentang website..." required></textarea>
-              </div>
-
-              <div class="col-md-12 text-center d-flex justify-content-end py-5">
-              <button type="submit" class="btn btn-success">Kirim Komentar</button>
-              </div>
-
             </div>
         </div>
 
       </div>
     </div>  
-
+  </section>
 
 </form>
 

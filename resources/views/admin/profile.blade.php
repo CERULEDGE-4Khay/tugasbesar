@@ -24,7 +24,7 @@
                     </div>
         
                     <div class="mt-6 text-center">
-                        <a href="#" class="d-flex btn btn-info text-white px-3 rounded-lg justify-content-end ">  
+                        <a href="#" class="btn btn-info text-white px-3">  
                             Edit Profil
                         </a>
                     </div>

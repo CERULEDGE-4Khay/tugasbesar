@@ -88,12 +88,11 @@
 
 <div class="page-title dark-background" data-aos="fade" style="background-image: url(/img/guitar2.jpg);">
     <div class="container position-relative">
-        <h1>Katalog Chord 🎶</h1>
+        <h1>Katalog Chord</h1>
         <p>Pelajari berbagai bentuk chord gitar dari dasar hingga mahir.</p>
         <nav class="breadcrumbs">
             <ol>
                 <li><a href="/">Home</a></li>
-                <li>Katalog Chord</li>
             </ol>
         </nav>
     </div>
